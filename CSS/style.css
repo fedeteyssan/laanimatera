@@ -1,0 +1,93 @@
+#home {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3e0a6f !important;
+}
+
+#home img {
+  width: 20rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  bottom: 3rem;
+}
+
+@media only screen and (max-width: 425px) {
+  #home img {
+    width: 10rem;
+  }
+}
+
+#home h1 {
+  font-family: 'Aladin', cursive;
+  font-size: 4rem;
+  text-align: center;
+  color: #FAF4F4;
+}
+
+@media only screen and (max-width: 425px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+}
+
+#home p {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #FAF4F4;
+}
+
+@media only screen and (max-width: 425px) {
+  #home p {
+    font-size: 1rem;
+  }
+}
+
+#home p a {
+  text-decoration: underline;
+  color: #FAF4F4;
+}
+
+#contacto {
+  background-image: url("../Multimedia/bg-form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contacto form {
+  width: 1170px;
+  height: 630px;
+  background: rgba(253, 249, 249, 0.75);
+  border: 1px solid rgba(44, 38, 108, 0.33);
+  -webkit-box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 57px 57px 0px;
+}
+
+#contacto form .form-column-1 {
+  margin: 5rem 1.5rem 0 3rem;
+}
+
+#contacto form .form-column-2 {
+  margin: 5rem 0 0 1.5rem;
+}
+
+#contacto form button {
+  margin: 0 auto;
+}
+
+#contacto .redes-sociales img {
+  width: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+#contacto{
+    background-image: url("../Multimedia/bg-form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    form{
+        width: 1170px;
+        height: 630px;
+        
+        background: rgba(253, 249, 249, 0.75);
+        border: 1px solid rgba(44, 38, 108, 0.33);
+        box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 0px 57px 57px 0px;
+
+        .form-column-1{
+            margin: 5rem 1.5rem 0 3rem;
+        }
+
+        .form-column-2{
+            margin: 5rem 0 0 1.5rem;
+        }
+
+        button{
+           margin:0 auto;
+        }
+    }
+
+    .redes-sociales{
+        img{
+            width: 3rem;
+        }
+    }
+
+}

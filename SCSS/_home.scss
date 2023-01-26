@@ -1,0 +1,46 @@
+#home{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(62, 10, 111) !important;
+
+    img{
+        width: 20rem;
+        align-self: center; 
+        position: relative; 
+        bottom: 3rem;
+
+        @media only screen and (max-width:425px){
+            width: 10rem;
+        }
+    }
+    
+    h1{
+        font-family: 'Aladin', cursive;
+        font-size: 4rem;
+        text-align: center;
+        color: #FAF4F4;
+
+        @media only screen and (max-width:425px){
+            font-size: 2rem;
+        }
+    }
+    
+    p{
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #FAF4F4;
+
+        @media only screen and (max-width:425px){
+            font-size: 1rem;
+        }
+
+        a{
+            text-decoration:underline;
+            color: #FAF4F4;
+        }
+    }
+}
+
