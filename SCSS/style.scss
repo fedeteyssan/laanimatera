@@ -1,3 +1,8 @@
-@import "home.scss";
-@import "universo1.scss";
-@import "contacto.scss";
+@import "../SCSS/home";
+@import "../SCSS/contacto";
+@import "../SCSS/universoPiratas";
+
+*{
+    margin:0;
+    padding:0;
+}

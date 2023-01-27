@@ -63,6 +63,19 @@
   background-image: url("../Multimedia/bg-form.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+}
+
+#contacto nav {
+  padding-top: 2rem;
+}
+
+#contacto nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
 }
 
 #contacto form {
@@ -75,19 +88,321 @@
   border-radius: 0px 57px 57px 0px;
 }
 
+#contacto form h3 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #7846A6;
+  text-transform: uppercase;
+  margin: 2.25rem 0 0 3rem;
+}
+
 #contacto form .form-column-1 {
-  margin: 5rem 1.5rem 0 3rem;
+  margin: 1rem 1.5rem 0 3rem;
+}
+
+#contacto form .form-column-1 .container-nombre-apellido input {
+  width: 14.25rem;
 }
 
 #contacto form .form-column-2 {
-  margin: 5rem 0 0 1.5rem;
+  margin: 1rem 0 0 1.5rem;
+}
+
+#contacto form label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#contacto form input {
+  width: 29.25rem;
+  height: 2.25rem;
+  background: rgba(247, 236, 236, 0.75);
+  border-radius: 15px;
+}
+
+#contacto form textarea {
+  background: rgba(247, 236, 236, 0.75);
+  border-radius: 15px;
 }
 
 #contacto form button {
-  margin: 0 auto;
+  width: 8.75rem;
+  height: 2.5rem;
+  margin: 1rem 6rem 0 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #7846A6;
+  -webkit-box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#contacto .redes-sociales {
+  float: right;
+  margin-right: 1rem;
+  position: relative;
+  bottom: 6rem;
 }
 
 #contacto .redes-sociales img {
   width: 3rem;
+  padding-top: 0.5rem;
+  -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+          filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+}
+
+#universoPiratas {
+  background-image: url("/Multimedia/bg-piratas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#universoPiratas nav {
+  padding-top: 2rem;
+}
+
+#universoPiratas nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+}
+
+#universoPiratas section {
+  height: 100%;
+}
+
+#universoPiratas section .titulo-propuesta {
+  font-family: 'Aladin';
+  font-weight: 400;
+  font-size: 5.625rem;
+  line-height: 110px;
+  color: #FAF4F4;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  position: relative;
+  top: 8rem;
+  left: 4rem;
+  z-index: 2;
+}
+
+#universoPiratas section .contenedor-barco {
+  position: relative;
+  top: 1.5rem;
+  left: 72rem;
+  z-index: 1;
+  -webkit-animation: rotateBoat 4s linear forwards;
+          animation: rotateBoat 4s linear forwards;
+}
+
+@-webkit-keyframes rotateBoat {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateBoat {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+#universoPiratas section .contenedor-barco .barco {
+  width: 50rem;
+  -webkit-animation: moveBoat 4s linear forwards;
+          animation: moveBoat 4s linear forwards;
+}
+
+@-webkit-keyframes moveBoat {
+  0% {
+    -webkit-transform: translate(0rem);
+            transform: translate(0rem);
+  }
+  20% {
+    -webkit-transform: translate(-15rem);
+            transform: translate(-15rem);
+  }
+  40% {
+    -webkit-transform: translate(-30rem);
+            transform: translate(-30rem);
+  }
+  60% {
+    -webkit-transform: translate(-45rem);
+            transform: translate(-45rem);
+  }
+  80% {
+    -webkit-transform: translate(-60rem);
+            transform: translate(-60rem);
+  }
+  100% {
+    -webkit-transform: translate(-75rem);
+            transform: translate(-75rem);
+  }
+}
+
+@keyframes moveBoat {
+  0% {
+    -webkit-transform: translate(0rem);
+            transform: translate(0rem);
+  }
+  20% {
+    -webkit-transform: translate(-15rem);
+            transform: translate(-15rem);
+  }
+  40% {
+    -webkit-transform: translate(-30rem);
+            transform: translate(-30rem);
+  }
+  60% {
+    -webkit-transform: translate(-45rem);
+            transform: translate(-45rem);
+  }
+  80% {
+    -webkit-transform: translate(-60rem);
+            transform: translate(-60rem);
+  }
+  100% {
+    -webkit-transform: translate(-75rem);
+            transform: translate(-75rem);
+  }
+}
+
+#universoPiratas section .texto-propuesta {
+  position: relative;
+  top: 5rem;
+  right: 20rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#universoPiratas section .texto-propuesta p {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#universoPiratas .piratas-ola {
+  height: 100%;
+  position: relative;
+  top: 38rem;
+  right: 108.2rem;
+  z-index: 3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

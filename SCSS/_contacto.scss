@@ -1,7 +1,11 @@
 #contacto{
+
+    @import '../SCSS/componentes/navbar';
+    
     background-image: url("../Multimedia/bg-form.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 
 
     form{
@@ -13,22 +17,79 @@
         box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
         border-radius: 0px 57px 57px 0px;
 
+        h3{
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 400;
+            color: #7846A6;
+            text-transform: uppercase;
+            margin: 2.25rem 0 0 3rem;
+        }
+
         .form-column-1{
-            margin: 5rem 1.5rem 0 3rem;
+            margin: 1rem 1.5rem 0 3rem;
+
+            .container-nombre-apellido{
+                input{
+                    width: 14.25rem;
+                }
+            }
         }
 
         .form-column-2{
-            margin: 5rem 0 0 1.5rem;
+            margin: 1rem 0 0 1.5rem;
+        }
+
+        label{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.125rem;
+            text-align: center;
+            margin-bottom: 0;;
+        }
+
+        input{
+            width: 29.25rem;
+            height: 2.25rem;
+            background: rgba(247, 236, 236, 0.75);
+            border-radius: 15px;
+        }
+
+        textarea{
+            background: rgba(247, 236, 236, 0.75);
+            border-radius: 15px;
         }
 
         button{
-           margin:0 auto;
+            width: 8.75rem;
+            height: 2.5rem;
+            
+            margin:1rem 6rem 0 0;
+            align-self: center;
+             
+            background: #7846A6;
+            box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 22px;
+
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 1.25rem;
+            text-align: center;
+            color: #FFFFFF;
         }
     }
 
     .redes-sociales{
+        float: right;
+        margin-right: 1rem;
+        position: relative;
+        bottom: 6rem;
+
         img{
             width: 3rem;
+            padding-top: 0.5rem;
+            filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
         }
     }
 

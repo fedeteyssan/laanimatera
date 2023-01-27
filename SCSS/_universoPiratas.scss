@@ -1,0 +1,152 @@
+#universoPiratas{
+
+    @import '../SCSS/componentes/navbar';
+
+    background-image: url("/Multimedia/bg-piratas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+   
+    section{
+
+        height: 100%;
+
+        .titulo-propuesta{
+            font-family: 'Aladin';
+            font-weight: 400;
+            font-size: 5.625rem;
+            line-height: 110px;
+            color: #FAF4F4;
+            text-transform: uppercase;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            height: fit-content;
+            min-width: fit-content; 
+
+            position: relative;
+            top: 8rem;
+            left: 4rem;
+            z-index: 2;     
+        }
+    
+        .contenedor-barco{
+            position: relative;
+            top:1.5rem;
+            left: 72rem;
+            z-index: 1;
+            animation: rotateBoat 4s linear forwards;
+    
+            @keyframes rotateBoat {
+                0%{
+                    transform: rotate(0deg) ;
+                }
+    
+                10%{
+                    transform: rotate(-1deg) ;
+                }
+    
+                20%{
+                    transform: rotate(0deg) ;
+                }
+    
+                30%{
+                    transform: rotate(1deg) ;
+                }
+    
+                40%{
+                    transform: rotate(0deg) ;
+                }
+    
+                50%{
+                    transform: rotate(-2deg) ;
+                }
+    
+                60%{
+                    transform: rotate(0deg) ;
+                }
+    
+                70%{
+                    transform: rotate(1deg) ;
+                }
+    
+                80%{
+                    transform: rotate(0deg) ;
+                }
+    
+                90%{
+                    transform: rotate(-1deg) ;
+                }
+    
+                100%{
+                    transform: rotate(0deg) ;
+                }
+            }
+    
+            .barco{
+                width: 50rem;
+                animation: moveBoat 4s linear forwards;
+            }
+        
+            @keyframes moveBoat {
+               0%{
+                transform: translate(0rem)   ;
+               }
+        
+               20%{
+                    transform: translate(-15rem) ;
+               }
+        
+               40%{
+                    transform: translate(-30rem) ;
+               }
+        
+               60%{
+                    transform: translate(-45rem);
+               }
+        
+               80%{
+                transform: translate(-60rem);
+                }
+        
+                100%{
+                    transform: translate(-75rem);
+                }
+            }
+        }  
+    
+        .texto-propuesta{
+            position: relative;
+            top:5rem;
+            right: 20rem;
+            height: fit-content;
+
+            p{
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 1.125rem;
+                line-height: 27px;
+                text-align: center;
+                color: #FFFFFF; 
+                position: absolute;
+                left: 50%;
+                bottom: 50%;  
+                transform: translate(-50%,-50%);
+            }
+            
+        }
+    }
+
+    .piratas-ola{
+        height: 100%;
+        position: relative;
+        top: 38rem;
+        right: 108.2rem;
+        z-index: 3;
+        
+    }
+}
