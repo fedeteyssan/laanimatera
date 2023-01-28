@@ -162,8 +162,8 @@
           filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
 }
 
-#universoPiratas {
-  background-image: url("/Multimedia/bg-piratas.jpg");
+#universoAventura {
+  background-image: url("/Multimedia/bg-aventura.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -171,11 +171,11 @@
   overflow-y: hidden;
 }
 
-#universoPiratas nav {
+#universoAventura nav {
   padding-top: 2rem;
 }
 
-#universoPiratas nav ul li a {
+#universoAventura nav ul li a {
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 1.125rem;
@@ -183,11 +183,33 @@
   margin: 0 1rem;
 }
 
-#universoPiratas section {
+#universoEspacio {
+  background-image: url("/Multimedia/bg-espacio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -1px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#universoEspacio nav {
+  padding-top: 2rem;
+}
+
+#universoEspacio nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+}
+
+#universoEspacio section {
   height: 100%;
 }
 
-#universoPiratas section .titulo-propuesta {
+#universoEspacio section .titulo-propuesta {
   font-family: 'Aladin';
   font-weight: 400;
   font-size: 5.625rem;
@@ -207,13 +229,193 @@
   z-index: 2;
 }
 
-#universoPiratas section .contenedor-barco {
+#universoEspacio section .contenedor-astronauta {
   position: relative;
-  top: 1.5rem;
-  left: 72rem;
+  top: 20rem;
   z-index: 1;
-  -webkit-animation: rotateBoat 4s linear forwards;
-          animation: rotateBoat 4s linear forwards;
+  -webkit-animation: rotateAstro 5s linear infinite;
+          animation: rotateAstro 5s linear infinite;
+}
+
+@-webkit-keyframes rotateAstro {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes rotateAstro {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+#universoEspacio section .contenedor-astronauta .astronauta {
+  width: 15rem;
+  -webkit-animation: moveAstro 5s linear infinite;
+          animation: moveAstro 5s linear infinite;
+}
+
+@-webkit-keyframes moveAstro {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+            transform: translate3d(50px, 50px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(100px, 100px, 0);
+            transform: translate3d(100px, 100px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+            transform: translate3d(50px, 50px, 0);
+  }
+}
+
+@keyframes moveAstro {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+            transform: translate3d(50px, 50px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(100px, 100px, 0);
+            transform: translate3d(100px, 100px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+            transform: translate3d(50px, 50px, 0);
+  }
+}
+
+#universoEspacio section .texto-propuesta {
+  position: relative;
+  top: 5rem;
+  left: 22.6rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#universoEspacio section .texto-propuesta p {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#universoEspacio .volver {
+  position: relative;
+  top: 20rem;
+  left: 73rem;
+  z-index: 3;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid #F3EFEF;
+  border-radius: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 4rem;
+}
+
+#universoEspacio .volver p {
+  margin-bottom: 0;
+}
+
+#universoIslaPirata {
+  background-image: url("/Multimedia/bg-piratas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#universoIslaPirata nav {
+  padding-top: 2rem;
+}
+
+#universoIslaPirata nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+}
+
+#universoIslaPirata section {
+  height: 100%;
+}
+
+#universoIslaPirata section .titulo-propuesta {
+  font-family: 'Aladin';
+  font-weight: 400;
+  font-size: 5.625rem;
+  line-height: 110px;
+  color: #FAF4F4;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  position: relative;
+  top: 8rem;
+  left: 4rem;
+  z-index: 2;
+}
+
+#universoIslaPirata section .contenedor-barco {
+  position: relative;
+  left: 72rem;
+  bottom: 0.5rem;
+  z-index: 1;
+  -webkit-animation: rotateBoat 3s linear forwards;
+          animation: rotateBoat 3s linear forwards;
 }
 
 @-webkit-keyframes rotateBoat {
@@ -238,8 +440,8 @@
             transform: rotate(0deg);
   }
   50% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
   }
   60% {
     -webkit-transform: rotate(0deg);
@@ -285,8 +487,8 @@
             transform: rotate(0deg);
   }
   50% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
   }
   60% {
     -webkit-transform: rotate(0deg);
@@ -310,10 +512,10 @@
   }
 }
 
-#universoPiratas section .contenedor-barco .barco {
+#universoIslaPirata section .contenedor-barco .barco {
   width: 50rem;
-  -webkit-animation: moveBoat 4s linear forwards;
-          animation: moveBoat 4s linear forwards;
+  -webkit-animation: moveBoat 3s linear forwards;
+          animation: moveBoat 3s linear forwards;
 }
 
 @-webkit-keyframes moveBoat {
@@ -370,7 +572,7 @@
   }
 }
 
-#universoPiratas section .texto-propuesta {
+#universoIslaPirata section .texto-propuesta {
   position: relative;
   top: 5rem;
   right: 20rem;
@@ -379,7 +581,7 @@
   height: fit-content;
 }
 
-#universoPiratas section .texto-propuesta p {
+#universoIslaPirata section .texto-propuesta p {
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 1.125rem;
@@ -393,12 +595,227 @@
           transform: translate(-50%, -50%);
 }
 
-#universoPiratas .piratas-ola {
-  height: 100%;
+#universoIslaPirata section .piratas-ola {
+  height: 195px;
   position: relative;
-  top: 38rem;
+  top: 34rem;
   right: 108.2rem;
   z-index: 3;
+}
+
+#universoIslaPirata .volver {
+  position: relative;
+  bottom: 4rem;
+  left: 73rem;
+  z-index: 3;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid #F3EFEF;
+  border-radius: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 4rem;
+}
+
+#universoIslaPirata .volver p {
+  margin-bottom: 0;
+}
+
+#universoLigaHeroica {
+  background-image: url("/Multimedia/bg-liga.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#universoLigaHeroica nav {
+  padding-top: 2rem;
+}
+
+#universoLigaHeroica nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+}
+
+#universoLigaHeroica section {
+  height: 100%;
+}
+
+#universoLigaHeroica section .titulo-propuesta {
+  font-family: 'Aladin';
+  font-weight: 400;
+  font-size: 5.625rem;
+  line-height: 110px;
+  color: #FAF4F4;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  position: relative;
+  top: 8rem;
+  left: 4rem;
+  z-index: 2;
+}
+
+#universoLigaHeroica section .contenedor-heroe {
+  position: relative;
+  top: 20rem;
+  z-index: 1;
+  -webkit-animation: 5s linear infinite;
+          animation: 5s linear infinite;
+}
+
+@keyframes rotateAstro {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+#universoLigaHeroica section .contenedor-heroe .heroe {
+  width: 15rem;
+  -webkit-animation: 5s linear infinite;
+          animation: 5s linear infinite;
+}
+
+@keyframes moveAstro {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+            transform: translate3d(50px, 50px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(100px, 100px, 0);
+            transform: translate3d(100px, 100px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+            transform: translate3d(50px, 50px, 0);
+  }
+}
+
+#universoLigaHeroica section .contenedor-heroina {
+  position: relative;
+  top: 24rem;
+  z-index: 1;
+  -webkit-animation: 5s linear infinite;
+          animation: 5s linear infinite;
+}
+
+@keyframes rotateAstro {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+#universoLigaHeroica section .contenedor-heroina .heroina {
+  width: 12rem;
+  -webkit-animation: 5s linear infinite;
+          animation: 5s linear infinite;
+}
+
+@keyframes moveAstro {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+            transform: translate3d(50px, 50px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(100px, 100px, 0);
+            transform: translate3d(100px, 100px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+            transform: translate3d(50px, 50px, 0);
+  }
+}
+
+#universoLigaHeroica section .texto-propuesta {
+  position: relative;
+  top: 5rem;
+  left: 7.1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#universoLigaHeroica section .texto-propuesta p {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#universoMagia {
+  background-image: url("/Multimedia/bg-magia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#universoMagia nav {
+  padding-top: 2rem;
+}
+
+#universoMagia nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
 }
 
 * {

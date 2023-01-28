@@ -1,0 +1,16 @@
+#universoAventura{
+
+    @import '../SCSS/componentes/navbar';
+
+    background-image: url("/Multimedia/bg-aventura.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+   
+}

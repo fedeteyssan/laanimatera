@@ -1,8 +1,8 @@
-#universoPiratas{
+#universoIslaPirata{
 
     @import '../SCSS/componentes/navbar';
 
-    background-image: url("/Multimedia/bg-piratas.jpg");
+    background-image: url("/Multimedia/bg-piratas.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -36,10 +36,10 @@
     
         .contenedor-barco{
             position: relative;
-            top:1.5rem;
             left: 72rem;
+            bottom: 0.5rem;
             z-index: 1;
-            animation: rotateBoat 4s linear forwards;
+            animation: rotateBoat 3s linear forwards;
     
             @keyframes rotateBoat {
                 0%{
@@ -63,7 +63,7 @@
                 }
     
                 50%{
-                    transform: rotate(-2deg) ;
+                    transform: rotate(-1deg) ;
                 }
     
                 60%{
@@ -89,7 +89,7 @@
     
             .barco{
                 width: 50rem;
-                animation: moveBoat 4s linear forwards;
+                animation: moveBoat 3s linear forwards;
             }
         
             @keyframes moveBoat {
@@ -136,17 +136,39 @@
                 left: 50%;
                 bottom: 50%;  
                 transform: translate(-50%,-50%);
-            }
+            }   
+        }
+
+        .piratas-ola{
+            height: 195px;
+            position: relative;
+            top: 34rem;
+            right: 108.2rem;
+            z-index: 3;
             
         }
     }
 
-    .piratas-ola{
-        height: 100%;
+    .volver{
         position: relative;
-        top: 38rem;
-        right: 108.2rem;
+        bottom: 4rem;
+        left: 73rem;
         z-index: 3;
         
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 1.125rem;
+        text-align: center;
+        color: #FFFFFF;
+
+        border: 1px solid #F3EFEF;
+        border-radius: 20px;
+
+        width: fit-content;
+        padding: 0.5rem 1rem 0.5rem 4rem;
+
+        p{
+            margin-bottom: 0;
+        }
     }
 }
