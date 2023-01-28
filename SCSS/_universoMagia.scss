@@ -12,5 +12,25 @@
     overflow-y: hidden;
     
    
-   
+    .volver{
+        position: relative;
+        top: 20rem;
+        left: 73rem;
+        z-index: 3;
+
+        border: 1px solid #F3EFEF;
+        border-radius: 20px;
+
+        width: fit-content;
+        padding: 0.5rem 1rem 0.5rem 4rem;
+
+        a{
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 1.125rem;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
 }

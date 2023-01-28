@@ -8,6 +8,13 @@ nav{
                 font-size: 1.125rem;
                 color: #F3EFEF;
                 margin: 0 1rem;
+                padding: 0.25rem 1rem;
+            }
+
+            .active{
+                border: 1px solid #F9F3F3;
+                border-radius: 25px;
+                font-weight: 600;
             }
         }
     }

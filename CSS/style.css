@@ -59,107 +59,153 @@
   color: #FAF4F4;
 }
 
-#contacto {
-  background-image: url("../Multimedia/bg-form.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+#quienesSomos {
+  background: radial-gradient(31.15% 53.79% at 50% 45.61%, #E3DDD3 22.4%, #B4A99A 99.9%);
+  opacity: 0.8;
   min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-#contacto nav {
+#quienesSomos nav {
   padding-top: 2rem;
 }
 
-#contacto nav ul li a {
+#quienesSomos nav ul li a {
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 1.125rem;
   color: #F3EFEF;
   margin: 0 1rem;
+  padding: 0.25rem 1rem;
 }
 
-#contacto form {
-  width: 1170px;
-  height: 630px;
-  background: rgba(253, 249, 249, 0.75);
-  border: 1px solid rgba(44, 38, 108, 0.33);
-  -webkit-box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
-          box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 0px 57px 57px 0px;
+#quienesSomos nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
 }
 
-#contacto form h3 {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.75rem;
+#quienesSomos section h3 {
+  font-family: 'Aladin';
   font-weight: 400;
-  color: #7846A6;
-  text-transform: uppercase;
-  margin: 2.25rem 0 0 3rem;
-}
-
-#contacto form .form-column-1 {
-  margin: 1rem 1.5rem 0 3rem;
-}
-
-#contacto form .form-column-1 .container-nombre-apellido input {
-  width: 14.25rem;
-}
-
-#contacto form .form-column-2 {
-  margin: 1rem 0 0 1.5rem;
-}
-
-#contacto form label {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 5.625rem;
+  line-height: 110px;
   text-align: center;
-  margin-bottom: 0;
+  color: #FAF4F4;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  position: absolute;
+  top: 25%;
 }
 
-#contacto form input {
-  width: 29.25rem;
-  height: 2.25rem;
-  background: rgba(247, 236, 236, 0.75);
-  border-radius: 15px;
+#propuestas {
+  background: radial-gradient(31.15% 53.79% at 50% 45.61%, #E3DDD3 22.4%, #B4A99A 99.9%);
+  opacity: 0.8;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-#contacto form textarea {
-  background: rgba(247, 236, 236, 0.75);
-  border-radius: 15px;
+#propuestas nav {
+  padding-top: 2rem;
 }
 
-#contacto form button {
-  width: 8.75rem;
-  height: 2.5rem;
-  margin: 1rem 6rem 0 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  background: #7846A6;
-  -webkit-box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 22px;
+#propuestas nav ul li a {
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#propuestas nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+#propuestas section h3 {
+  font-family: 'Aladin';
+  font-weight: 400;
+  font-size: 5.625rem;
+  line-height: 110px;
   text-align: center;
-  color: #FFFFFF;
+  color: #FAF4F4;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  margin: 2rem auto 0 auto;
 }
 
-#contacto .redes-sociales {
-  float: right;
-  margin-right: 1rem;
+#propuestas section .contenedor-libros {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#propuestas section .contenedor-libros a {
+  z-index: 1;
+}
+
+#propuestas section .contenedor-libros a img {
+  -webkit-transform: rotate3d(1, 0, 0, -25deg);
+          transform: rotate3d(1, 0, 0, -25deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+#propuestas section .contenedor-libros a img:hover {
+  -webkit-transform: rotate3d(1, 0, 0, 0deg);
+          transform: rotate3d(1, 0, 0, 0deg);
+}
+
+#propuestas section .contenedor-libros a .libro1 {
+  height: 473px;
+}
+
+#propuestas section .contenedor-libros a .libro2 {
+  height: 411px;
+  margin-top: 3.3rem;
+}
+
+#propuestas section .contenedor-libros a .libro3 {
+  height: 476px;
+}
+
+#propuestas section .contenedor-libros a .libro4 {
+  height: 452px;
+  margin-top: 1.3rem;
+}
+
+#propuestas section .contenedor-libros a .libro5 {
+  height: 420px;
+  margin-top: 3.3rem;
+}
+
+#propuestas section .contenedor-cta {
+  width: 73.75rem;
+  height: 5.75rem;
+  text-align: center;
+  margin: 0 auto;
   position: relative;
-  bottom: 6rem;
+  bottom: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 217, 217, 0.41)), to(#D9D9D9));
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.41) 0%, #D9D9D9 100%);
+  -webkit-box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
 }
 
-#contacto .redes-sociales img {
-  width: 3rem;
-  padding-top: 0.5rem;
-  -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
-          filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+#propuestas section .contenedor-cta p {
+  font-family: 'Julius Sans One';
+  font-weight: 400;
+  font-size: 1.75rem;
+  text-align: center;
+  color: #000000;
+  padding-top: 1.5rem;
 }
 
 #universoAventura {
@@ -181,6 +227,35 @@
   font-size: 1.125rem;
   color: #F3EFEF;
   margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#universoAventura nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+#universoAventura .volver {
+  position: relative;
+  top: 20rem;
+  left: 73rem;
+  z-index: 3;
+  border: 1px solid #F3EFEF;
+  border-radius: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 4rem;
+}
+
+#universoAventura .volver a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 #universoEspacio {
@@ -203,6 +278,13 @@
   font-size: 1.125rem;
   color: #F3EFEF;
   margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#universoEspacio nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
 }
 
 #universoEspacio section {
@@ -347,11 +429,6 @@
   top: 20rem;
   left: 73rem;
   z-index: 3;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 1.125rem;
-  text-align: center;
-  color: #FFFFFF;
   border: 1px solid #F3EFEF;
   border-radius: 20px;
   width: -webkit-fit-content;
@@ -360,8 +437,13 @@
   padding: 0.5rem 1rem 0.5rem 4rem;
 }
 
-#universoEspacio .volver p {
-  margin-bottom: 0;
+#universoEspacio .volver a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 #universoIslaPirata {
@@ -383,6 +465,13 @@
   font-size: 1.125rem;
   color: #F3EFEF;
   margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#universoIslaPirata nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
 }
 
 #universoIslaPirata section {
@@ -411,111 +500,12 @@
 
 #universoIslaPirata section .contenedor-barco {
   position: relative;
+  top: 1.1rem;
   left: 72rem;
   bottom: 0.5rem;
   z-index: 1;
-  -webkit-animation: rotateBoat 3s linear forwards;
-          animation: rotateBoat 3s linear forwards;
-}
-
-@-webkit-keyframes rotateBoat {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  10% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  30% {
-    -webkit-transform: rotate(1deg);
-            transform: rotate(1deg);
-  }
-  40% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  70% {
-    -webkit-transform: rotate(1deg);
-            transform: rotate(1deg);
-  }
-  80% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  90% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes rotateBoat {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  10% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  30% {
-    -webkit-transform: rotate(1deg);
-            transform: rotate(1deg);
-  }
-  40% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  70% {
-    -webkit-transform: rotate(1deg);
-            transform: rotate(1deg);
-  }
-  80% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  90% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-#universoIslaPirata section .contenedor-barco .barco {
-  width: 50rem;
-  -webkit-animation: moveBoat 3s linear forwards;
-          animation: moveBoat 3s linear forwards;
+  -webkit-animation: moveBoat 4s linear forwards;
+          animation: moveBoat 4s linear forwards;
 }
 
 @-webkit-keyframes moveBoat {
@@ -572,6 +562,58 @@
   }
 }
 
+#universoIslaPirata section .contenedor-barco .barco {
+  width: 50rem;
+  -webkit-animation: rotateBoat 4s linear infinite;
+          animation: rotateBoat 4s linear infinite;
+}
+
+@-webkit-keyframes rotateBoat {
+  20% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  40% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+@keyframes rotateBoat {
+  20% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  40% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
 #universoIslaPirata section .texto-propuesta {
   position: relative;
   top: 5rem;
@@ -596,9 +638,9 @@
 }
 
 #universoIslaPirata section .piratas-ola {
-  height: 195px;
+  height: 130px;
   position: relative;
-  top: 34rem;
+  top: 38.2rem;
   right: 108.2rem;
   z-index: 3;
 }
@@ -608,11 +650,6 @@
   bottom: 4rem;
   left: 73rem;
   z-index: 3;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 1.125rem;
-  text-align: center;
-  color: #FFFFFF;
   border: 1px solid #F3EFEF;
   border-radius: 20px;
   width: -webkit-fit-content;
@@ -621,8 +658,13 @@
   padding: 0.5rem 1rem 0.5rem 4rem;
 }
 
-#universoIslaPirata .volver p {
-  margin-bottom: 0;
+#universoIslaPirata .volver a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 #universoLigaHeroica {
@@ -644,6 +686,13 @@
   font-size: 1.125rem;
   color: #F3EFEF;
   margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#universoLigaHeroica nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
 }
 
 #universoLigaHeroica section {
@@ -777,7 +826,7 @@
 #universoLigaHeroica section .texto-propuesta {
   position: relative;
   top: 5rem;
-  left: 7.1rem;
+  left: 10.1rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -795,6 +844,28 @@
   bottom: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#universoLigaHeroica .volver {
+  position: relative;
+  top: 20rem;
+  left: 73rem;
+  z-index: 3;
+  border: 1px solid #F3EFEF;
+  border-radius: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 4rem;
+}
+
+#universoLigaHeroica .volver a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 #universoMagia {
@@ -816,6 +887,172 @@
   font-size: 1.125rem;
   color: #F3EFEF;
   margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#universoMagia nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+#universoMagia .volver {
+  position: relative;
+  top: 20rem;
+  left: 73rem;
+  z-index: 3;
+  border: 1px solid #F3EFEF;
+  border-radius: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 4rem;
+}
+
+#universoMagia .volver a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#galeriaFotos {
+  background: radial-gradient(31.15% 53.79% at 50% 45.61%, #E3DDD3 22.4%, #B4A99A 99.9%);
+  opacity: 0.8;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#galeriaFotos nav {
+  padding-top: 2rem;
+}
+
+#galeriaFotos nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#galeriaFotos nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+#contacto {
+  background-image: url("../Multimedia/bg-form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#contacto nav {
+  padding-top: 2rem;
+}
+
+#contacto nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#contacto nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+#contacto form {
+  width: 1170px;
+  height: 630px;
+  background: rgba(253, 249, 249, 0.75);
+  border: 1px solid rgba(44, 38, 108, 0.33);
+  -webkit-box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 57px 57px 0px;
+}
+
+#contacto form h3 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #7846A6;
+  text-transform: uppercase;
+  margin: 2.25rem 0 0 3rem;
+}
+
+#contacto form .form-column-1 {
+  margin: 1rem 1.5rem 0 3rem;
+}
+
+#contacto form .form-column-1 .container-nombre-apellido input {
+  width: 14.25rem;
+}
+
+#contacto form .form-column-2 {
+  margin: 1rem 0 0 1.5rem;
+}
+
+#contacto form label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#contacto form input {
+  width: 29.25rem;
+  height: 2.25rem;
+  background: rgba(247, 236, 236, 0.75);
+  border-radius: 15px;
+}
+
+#contacto form textarea {
+  background: rgba(247, 236, 236, 0.75);
+  border-radius: 15px;
+}
+
+#contacto form button {
+  width: 8.75rem;
+  height: 2.5rem;
+  margin: 1rem 6rem 0 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #7846A6;
+  -webkit-box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#contacto .redes-sociales {
+  float: right;
+  margin-right: 1rem;
+  position: relative;
+  bottom: 6rem;
+}
+
+#contacto .redes-sociales img {
+  width: 3rem;
+  padding-top: 0.5rem;
+  -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+          filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
 }
 
 * {

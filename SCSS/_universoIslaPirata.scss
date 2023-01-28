@@ -36,87 +36,66 @@
     
         .contenedor-barco{
             position: relative;
+            top:1.1rem;
             left: 72rem;
             bottom: 0.5rem;
             z-index: 1;
-            animation: rotateBoat 3s linear forwards;
-    
-            @keyframes rotateBoat {
+            animation: moveBoat 4s linear forwards;
+
+            @keyframes moveBoat {
                 0%{
-                    transform: rotate(0deg) ;
+                    transform: translate(0rem)   ;
                 }
-    
-                10%{
-                    transform: rotate(-1deg) ;
-                }
-    
+             
                 20%{
-                    transform: rotate(0deg) ;
+                    transform: translate(-15rem) ;
                 }
-    
-                30%{
-                    transform: rotate(1deg) ;
-                }
-    
+             
                 40%{
-                    transform: rotate(0deg) ;
+                    transform: translate(-30rem) ;
                 }
-    
-                50%{
-                    transform: rotate(-1deg) ;
-                }
-    
+             
                 60%{
-                    transform: rotate(0deg) ;
+                    transform: translate(-45rem);
                 }
-    
-                70%{
-                    transform: rotate(1deg) ;
-                }
-    
+             
                 80%{
-                    transform: rotate(0deg) ;
+                    transform: translate(-60rem);
                 }
-    
-                90%{
-                    transform: rotate(-1deg) ;
-                }
-    
+             
                 100%{
-                    transform: rotate(0deg) ;
+                    transform: translate(-75rem);
                 }
             }
     
             .barco{
                 width: 50rem;
-                animation: moveBoat 3s linear forwards;
-            }
+                animation: rotateBoat 4s linear infinite;
+    
+                @keyframes rotateBoat {
+                   
         
-            @keyframes moveBoat {
-               0%{
-                transform: translate(0rem)   ;
-               }
+                    20%{
+                        transform: rotate(-1deg) ;
+                    }
         
-               20%{
-                    transform: translate(-15rem) ;
-               }
+                    40%{
+                        transform: rotate(-5deg) ;
+                    }
         
-               40%{
-                    transform: translate(-30rem) ;
-               }
-        
-               60%{
-                    transform: translate(-45rem);
-               }
-        
-               80%{
-                transform: translate(-60rem);
+                    60%{
+                        transform: rotate(-1deg) ;
+                    }
+
+                    80%{
+                        transform: rotate(-5deg) ;
+                    }
+
+                    100%{
+                        transform: rotate(-1deg) ;
+                    }
                 }
-        
-                100%{
-                    transform: translate(-75rem);
-                }
-            }
+            } 
         }  
     
         .texto-propuesta{
@@ -140,12 +119,11 @@
         }
 
         .piratas-ola{
-            height: 195px;
+            height: 130px;
             position: relative;
-            top: 34rem;
+            top: 38.2rem;
             right: 108.2rem;
             z-index: 3;
-            
         }
     }
 
@@ -154,12 +132,6 @@
         bottom: 4rem;
         left: 73rem;
         z-index: 3;
-        
-        font-family: 'Poppins';
-        font-weight: 500;
-        font-size: 1.125rem;
-        text-align: center;
-        color: #FFFFFF;
 
         border: 1px solid #F3EFEF;
         border-radius: 20px;
@@ -167,8 +139,13 @@
         width: fit-content;
         padding: 0.5rem 1rem 0.5rem 4rem;
 
-        p{
-            margin-bottom: 0;
+        a{
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 1.125rem;
+            text-align: center;
+            color: #FFFFFF;
         }
     }
 }
