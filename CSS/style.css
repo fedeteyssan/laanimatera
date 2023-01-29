@@ -20,13 +20,13 @@
 
 @-webkit-keyframes desaparece {
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
 @keyframes desaparece {
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -150,6 +150,170 @@
   position: relative;
   bottom: 1rem;
   left: 8rem;
+}
+
+#home .contenedor {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 1200px;
+          perspective: 1200px;
+  position: relative;
+  bottom: 170px;
+}
+
+#home .book {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  height: 500px;
+  cursor: pointer;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  -webkit-animation: 2s linear forwards;
+          animation: 2s linear forwards;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@-webkit-keyframes zoom {
+  100% {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+  }
+}
+
+@keyframes zoom {
+  100% {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+  }
+}
+
+#home .front, #home .back, #home .page1, #home .page2, #home .page3, #home .page4, #home .page5, #home .page6 {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: -webkit-transform .5s ease-in-out, -webkit-box-shadow .35s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out, -webkit-box-shadow .35s ease-in-out;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out, -webkit-transform .5s ease-in-out, -webkit-box-shadow .35s ease-in-out;
+}
+
+#home .front {
+  width: 390px;
+  height: 530px;
+  -webkit-transform: translate(-35px, -20px);
+          transform: translate(-35px, -20px);
+}
+
+#home .back, #home .page1, #home .page2, #home .page3, #home .page4, #home .page5, #home .page6 {
+  width: 350px;
+}
+
+#home .front, #home .back {
+  background: transparent;
+}
+
+#home .front, #home .page1, #home .page3, #home .page5 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+#home .back, #home .page2, #home .page4, #home .page6 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+#home .page1 {
+  background: #efefef;
+}
+
+#home .page2 {
+  background: #efefef;
+}
+
+#home .page3 {
+  background: #f5f5f5;
+}
+
+#home .page4 {
+  background: #f5f5f5;
+}
+
+#home .page5 {
+  background: #fafafa;
+}
+
+#home .page6 {
+  background: #fdfdfd;
+}
+
+#home .book:hover .front {
+  -webkit-transform: rotateY(-160deg) scale(1.1);
+          transform: rotateY(-160deg) scale(1.1);
+  -webkit-box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+#home .book:hover .page1 {
+  -webkit-transform: rotateY(-150deg) scale(1.1);
+          transform: rotateY(-150deg) scale(1.1);
+  -webkit-box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+#home .book:hover .page2 {
+  -webkit-transform: rotateY(-30deg) scale(1.1);
+          transform: rotateY(-30deg) scale(1.1);
+  -webkit-box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+#home .book:hover .page3 {
+  -webkit-transform: rotateY(-140deg) scale(1.1);
+          transform: rotateY(-140deg) scale(1.1);
+  -webkit-box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+#home .book:hover .page4 {
+  -webkit-transform: rotateY(-40deg) scale(1.1);
+          transform: rotateY(-40deg) scale(1.1);
+  -webkit-box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+#home .book:hover .page5 {
+  -webkit-transform: rotateY(-130deg) scale(1.1);
+          transform: rotateY(-130deg) scale(1.1);
+  -webkit-box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+#home .book:hover .page6 {
+  -webkit-transform: rotateY(-50deg) scale(1.1);
+          transform: rotateY(-50deg) scale(1.1);
+  -webkit-box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+#home .book:hover .back {
+  -webkit-transform: rotateY(-20deg) scale(1.1);
+          transform: rotateY(-20deg) scale(1.1);
 }
 
 #quienesSomos {
