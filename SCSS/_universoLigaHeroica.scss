@@ -35,117 +35,109 @@
     
         .contenedor-heroe{
             position: relative;
-            top: 20rem;
+            top: 8rem;
+            left: 35rem;
             z-index: 1;
-            animation:  5s linear infinite;
+            animation:  volarHeroe 1s linear forwards;
     
-            @keyframes rotateAstro {
+            @keyframes volarHeroe {
                 0%{
-                    transform: rotate(0deg) ;
-                }
-    
-                25%{
-                    transform: rotate(10deg) ;
+                    transform: translate3d(2000px,2000px,0px) rotate(-25deg) ;
                 }
     
                 50%{
-                    transform: rotate(0deg) ;
+                    transform: translate3d(-25px,-50px,0px) rotate(-12.5deg) ;
                 }
-    
-                75%{
-                    transform: rotate(-10deg) ;
+               
+                100%{
+                    transform: translate3d(-100px,-150px,0px) rotate(0deg) ;
                 }
             }
     
             .heroe{
                 width: 15rem;
-                animation:  5s linear infinite;
-            }
+                animation: rotarHeroe 2s linear infinite;
+    
+                @keyframes rotarHeroe {
+                    0%{
+                        transform: rotate(0deg) ;
+                    }
         
-            @keyframes moveAstro {
-                0%{
-                    transform: translate3d(0,0,0)
+                    25%{
+                        transform: rotate(10deg) ;
+                    }
+        
+                    50%{
+                        transform: rotate(0deg) ;
+                    }
+        
+                    75%{
+                        transform: rotate(-10deg) ;
+                    }
                 }
-    
-                25%{
-                    transform: translate3d(50px,50px,0)
-                }
-    
-                50%{
-                    transform: translate3d(100px,100px,0)
-                }
-    
-                75%{
-                    transform: translate3d(50px,50px,0)
-                }
+               
             }
         }  
 
         .contenedor-heroina{
             position: relative;
-            top: 24rem;
+            top: 28rem;
             z-index: 1;
-            animation:  5s linear infinite;
+            animation: barridoHeroina 1s linear forwards;
     
-            @keyframes rotateAstro {
+            @keyframes barridoHeroina {
                 0%{
-                    transform: rotate(0deg) ;
-                }
-    
-                25%{
-                    transform: rotate(10deg) ;
+                    transform: translate3d(-2000px,0px,0px) ;
                 }
     
                 50%{
-                    transform: rotate(0deg) ;
+                    transform: translate3d(10px,0px,0px) ;
                 }
     
-                75%{
-                    transform: rotate(-10deg) ;
+                100%{
+                    transform: translate3d(50px,0px,0px) ;
                 }
             }
     
             .heroina{
                 width: 12rem;
-                animation:  5s linear infinite;
+                animation: transporteHeroina 3s ease infinite;
+                animation-delay: 1s;
             }
         
-            @keyframes moveAstro {
+            @keyframes transporteHeroina {
                 0%{
                     transform: translate3d(0,0,0)
                 }
-    
-                25%{
-                    transform: translate3d(50px,50px,0)
-                }
-    
+
                 50%{
-                    transform: translate3d(100px,100px,0)
-                }
-    
-                75%{
-                    transform: translate3d(50px,50px,0)
+                    transform: translate3d(-150px,0,0)
                 }
             }
         }  
     
         .texto-propuesta{
             position: relative;
-            top:5rem;
+            top:15rem;
             left: 10.1rem;
             height: fit-content;
 
             p{
+                width: 75%;
                 font-family: 'Poppins';
                 font-weight: 500;
-                font-size: 1.125rem;
+                font-size: 0.8rem;
                 line-height: 27px;
                 text-align: center;
                 color: #FFFFFF; 
                 position: absolute;
-                left: 50%;
-                bottom: 50%;  
+                left:250px; 
+                top:170px;
                 transform: translate(-50%,-50%);
+
+                span{
+                    font-style: italic;
+                }
             }   
         }
     }

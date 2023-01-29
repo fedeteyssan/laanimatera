@@ -12,6 +12,57 @@
     overflow-y: hidden;
     
    
+    section{
+
+        height: 100%;
+
+        .titulo-propuesta{
+            font-family: 'Aladin';
+            font-weight: 400;
+            font-size: 5.625rem;
+            line-height: 110px;
+            color: #FAF4F4;
+            text-transform: uppercase;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            height: fit-content;
+            min-width: fit-content; 
+
+            position: relative;
+            top: 8rem;
+            left: 4rem;
+            z-index: 2;     
+        }
+    
+       
+    
+        .texto-propuesta{
+            position: relative;
+            top:5rem;
+            left: 40rem;
+            height: fit-content;
+
+            p{
+                width: 80%;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 0.8rem;
+                line-height: 27px;
+                text-align: center;
+                color: #FFFFFF; 
+                position: absolute;
+                left:250px; 
+                top:170px;
+                transform: translate(-50%,-50%);
+
+                span{
+                    width: 50%;
+                    font-style: italic;
+                }
+            }   
+        }
+    }
+
     .volver{
         position: relative;
         top: 20rem;

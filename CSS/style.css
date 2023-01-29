@@ -541,6 +541,7 @@
 }
 
 #quienesSomos nav {
+  z-index: 10;
   padding-top: 2rem;
 }
 
@@ -1066,6 +1067,7 @@
 }
 
 #quienesSomos section .contenedor-nosotros {
+  position: relative;
   margin-top: 3rem;
   opacity: 0.0;
   -webkit-animation: fadeIn3 ease-in-out 4s forwards;
@@ -1093,88 +1095,119 @@
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos :nth-child(1) {
-  width: 213px;
-  height: 167px;
+  width: 210px;
+  height: 165px;
   position: absolute;
-  left: 80px;
-  top: 157px;
+  top: 0px;
+  left: -180px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos :nth-child(2) {
   width: 75px;
   height: 80px;
   position: absolute;
-  top: 70px;
-  left: 400px;
+  top: -65px;
+  left: 190px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos :nth-child(3) {
-  width: 76px;
-  height: 100px;
+  width: 100px;
+  height: 125px;
   position: absolute;
-  top: 70px;
-  left: 1050px;
+  top: -50px;
+  left: 760px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos :nth-child(4) {
-  width: 167;
-  height: 147px;
+  width: 165;
+  height: 145px;
   position: absolute;
-  top: 127px;
-  left: 1204px;
+  top: 15px;
+  left: 900px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(1) {
-  width: 155px;
-  height: 102px;
+  width: 125px;
+  height: 80px;
   position: absolute;
-  top: 498px;
-  left: 76px;
+  top: 350px;
+  left: -200px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(2) {
-  width: 50px;
-  height: 50px;
+  width: 110px;
+  height: 100;
+  position: absolute;
+  top: 250px;
+  left: -50px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(3) {
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 105px;
+  position: absolute;
+  left: 750px;
+  top: 480px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(4) {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 140px;
+  position: absolute;
+  left: 800px;
+  top: 200px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(5) {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 285px;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  position: absolute;
+  left: 1000px;
+  top: 200px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(1) {
-  width: 50px;
-  height: 50px;
+  width: 240px;
+  height: 235px;
+  position: absolute;
+  left: -150px;
+  top: 460px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(2) {
-  width: 50px;
-  height: 50px;
+  width: 125px;
+  height: 90px;
+  position: absolute;
+  left: 205px;
+  top: 590px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(3) {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 140px;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  position: absolute;
+  left: 480px;
+  top: 540px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(4) {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 100px;
+  position: absolute;
+  left: 900px;
+  top: 700px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(5) {
-  width: 50px;
-  height: 50px;
+  width: 280px;
+  height: 290px;
+  position: absolute;
+  left: 850px;
+  top: 420px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-texto {
@@ -1213,7 +1246,7 @@
 #quienesSomos section .contenedor-nosotros .contenedor-texto p {
   font-family: 'Poppins';
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.75rem;
   text-align: center;
   color: #FFFFFF;
@@ -1233,6 +1266,7 @@
 }
 
 #propuestas nav {
+  z-index: 10;
   padding-top: 2rem;
 }
 
@@ -1343,6 +1377,7 @@
 }
 
 #universoAventura nav {
+  z-index: 10;
   padding-top: 2rem;
 }
 
@@ -1394,6 +1429,7 @@
 }
 
 #universoEspacio nav {
+  z-index: 10;
   padding-top: 2rem;
 }
 
@@ -1528,7 +1564,7 @@
 
 #universoEspacio section .texto-propuesta {
   position: relative;
-  top: 5rem;
+  top: 18rem;
   left: 22.6rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1536,17 +1572,23 @@
 }
 
 #universoEspacio section .texto-propuesta p {
+  width: 75%;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
   position: absolute;
-  left: 50%;
-  bottom: 50%;
+  left: 250px;
+  top: 170px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#universoEspacio section .texto-propuesta p span {
+  width: 50%;
+  font-style: italic;
 }
 
 #universoEspacio .volver {
@@ -1581,6 +1623,7 @@
 }
 
 #universoIslaPirata nav {
+  z-index: 10;
   padding-top: 2rem;
 }
 
@@ -1749,17 +1792,22 @@
 }
 
 #universoIslaPirata section .texto-propuesta p {
+  width: 70%;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
   position: absolute;
-  left: 50%;
-  bottom: 50%;
+  left: 250px;
+  top: 170px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#universoIslaPirata section .texto-propuesta p span {
+  font-style: italic;
 }
 
 #universoIslaPirata section .piratas-ola {
@@ -1802,6 +1850,7 @@
 }
 
 #universoLigaHeroica nav {
+  z-index: 10;
   padding-top: 2rem;
 }
 
@@ -1846,65 +1895,50 @@
 
 #universoLigaHeroica section .contenedor-heroe {
   position: relative;
-  top: 20rem;
+  top: 8rem;
+  left: 35rem;
   z-index: 1;
-  -webkit-animation: 5s linear infinite;
-          animation: 5s linear infinite;
+  -webkit-animation: volarHeroe 1s linear forwards;
+          animation: volarHeroe 1s linear forwards;
 }
 
-@keyframes rotateAstro {
+@-webkit-keyframes volarHeroe {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    -webkit-transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
+            transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
   }
   50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
+            transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
   }
-  75% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+  100% {
+    -webkit-transform: translate3d(-100px, -150px, 0px) rotate(0deg);
+            transform: translate3d(-100px, -150px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes volarHeroe {
+  0% {
+    -webkit-transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
+            transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
+  }
+  50% {
+    -webkit-transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
+            transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
+  }
+  100% {
+    -webkit-transform: translate3d(-100px, -150px, 0px) rotate(0deg);
+            transform: translate3d(-100px, -150px, 0px) rotate(0deg);
   }
 }
 
 #universoLigaHeroica section .contenedor-heroe .heroe {
   width: 15rem;
-  -webkit-animation: 5s linear infinite;
-          animation: 5s linear infinite;
+  -webkit-animation: rotarHeroe 2s linear infinite;
+          animation: rotarHeroe 2s linear infinite;
 }
 
-@keyframes moveAstro {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  25% {
-    -webkit-transform: translate3d(50px, 50px, 0);
-            transform: translate3d(50px, 50px, 0);
-  }
-  50% {
-    -webkit-transform: translate3d(100px, 100px, 0);
-            transform: translate3d(100px, 100px, 0);
-  }
-  75% {
-    -webkit-transform: translate3d(50px, 50px, 0);
-            transform: translate3d(50px, 50px, 0);
-  }
-}
-
-#universoLigaHeroica section .contenedor-heroina {
-  position: relative;
-  top: 24rem;
-  z-index: 1;
-  -webkit-animation: 5s linear infinite;
-          animation: 5s linear infinite;
-}
-
-@keyframes rotateAstro {
+@-webkit-keyframes rotarHeroe {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -1923,34 +1957,96 @@
   }
 }
 
-#universoLigaHeroica section .contenedor-heroina .heroina {
-  width: 12rem;
-  -webkit-animation: 5s linear infinite;
-          animation: 5s linear infinite;
+@keyframes rotarHeroe {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
 }
 
-@keyframes moveAstro {
+#universoLigaHeroica section .contenedor-heroina {
+  position: relative;
+  top: 28rem;
+  z-index: 1;
+  -webkit-animation: barridoHeroina 1s linear forwards;
+          animation: barridoHeroina 1s linear forwards;
+}
+
+@-webkit-keyframes barridoHeroina {
+  0% {
+    -webkit-transform: translate3d(-2000px, 0px, 0px);
+            transform: translate3d(-2000px, 0px, 0px);
+  }
+  50% {
+    -webkit-transform: translate3d(10px, 0px, 0px);
+            transform: translate3d(10px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(50px, 0px, 0px);
+            transform: translate3d(50px, 0px, 0px);
+  }
+}
+
+@keyframes barridoHeroina {
+  0% {
+    -webkit-transform: translate3d(-2000px, 0px, 0px);
+            transform: translate3d(-2000px, 0px, 0px);
+  }
+  50% {
+    -webkit-transform: translate3d(10px, 0px, 0px);
+            transform: translate3d(10px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(50px, 0px, 0px);
+            transform: translate3d(50px, 0px, 0px);
+  }
+}
+
+#universoLigaHeroica section .contenedor-heroina .heroina {
+  width: 12rem;
+  -webkit-animation: transporteHeroina 3s ease infinite;
+          animation: transporteHeroina 3s ease infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes transporteHeroina {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
-  25% {
-    -webkit-transform: translate3d(50px, 50px, 0);
-            transform: translate3d(50px, 50px, 0);
+  50% {
+    -webkit-transform: translate3d(-150px, 0, 0);
+            transform: translate3d(-150px, 0, 0);
+  }
+}
+
+@keyframes transporteHeroina {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   50% {
-    -webkit-transform: translate3d(100px, 100px, 0);
-            transform: translate3d(100px, 100px, 0);
-  }
-  75% {
-    -webkit-transform: translate3d(50px, 50px, 0);
-            transform: translate3d(50px, 50px, 0);
+    -webkit-transform: translate3d(-150px, 0, 0);
+            transform: translate3d(-150px, 0, 0);
   }
 }
 
 #universoLigaHeroica section .texto-propuesta {
   position: relative;
-  top: 5rem;
+  top: 15rem;
   left: 10.1rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1958,17 +2054,22 @@
 }
 
 #universoLigaHeroica section .texto-propuesta p {
+  width: 75%;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
   position: absolute;
-  left: 50%;
-  bottom: 50%;
+  left: 250px;
+  top: 170px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#universoLigaHeroica section .texto-propuesta p span {
+  font-style: italic;
 }
 
 #universoLigaHeroica .volver {
@@ -2003,6 +2104,7 @@
 }
 
 #universoMagia nav {
+  z-index: 10;
   padding-top: 2rem;
 }
 
@@ -2019,6 +2121,59 @@
   border: 1px solid #F9F3F3;
   border-radius: 25px;
   font-weight: 600;
+}
+
+#universoMagia section {
+  height: 100%;
+}
+
+#universoMagia section .titulo-propuesta {
+  font-family: 'Aladin';
+  font-weight: 400;
+  font-size: 5.625rem;
+  line-height: 110px;
+  color: #FAF4F4;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  position: relative;
+  top: 8rem;
+  left: 4rem;
+  z-index: 2;
+}
+
+#universoMagia section .texto-propuesta {
+  position: relative;
+  top: 5rem;
+  left: 40rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#universoMagia section .texto-propuesta p {
+  width: 80%;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  left: 250px;
+  top: 170px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#universoMagia section .texto-propuesta p span {
+  width: 50%;
+  font-style: italic;
 }
 
 #universoMagia .volver {
@@ -2052,6 +2207,7 @@
 }
 
 #galeriaFotos nav {
+  z-index: 10;
   padding-top: 2rem;
 }
 
@@ -2071,13 +2227,16 @@
 }
 
 #contacto {
-  background-image: url("../Multimedia/bg-form.jpg");
+  background-image: url("../Multimedia/bg-contacto.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  background-position: 0rem -3rem;
+  overflow-y: hidden;
 }
 
 #contacto nav {
+  z-index: 10;
   padding-top: 2rem;
 }
 
@@ -2099,6 +2258,7 @@
 #contacto form {
   width: 1170px;
   height: 630px;
+  margin: 1rem 0 0 3rem;
   background: rgba(253, 249, 249, 0.75);
   border: 1px solid rgba(44, 38, 108, 0.33);
   -webkit-box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
