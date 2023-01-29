@@ -13,7 +13,7 @@
 
     section{
 
-        h3{
+        .story-telling{
             font-family: 'Aladin';
             font-weight: 400;
             font-size: 5.625rem;
@@ -21,10 +21,223 @@
             text-align: center;
             color: #FAF4F4;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            text-transform: uppercase;
 
             position: absolute;
-            top:25%;
+            top:20%;
+
+            opacity: 0.0;
+            animation: fadeIn ease-in-out 3s forwards;
+
+            @keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+            }
+            
+            span {
+                letter-spacing: -1rem;
+                display: inline-block;
+                text-shadow: 0 0 0 whitesmoke;
+                animation: smoky 2.5s 1.5s both;
+            }
+              
+            span:nth-child(even){
+                animation-name: smoky-mirror;
+            }
+              
+            @keyframes smoky {
+                60% {
+                  text-shadow: 0 0 40px whitesmoke;
+                }
+                to {
+                  transform:
+                    translate3d(15rem,-8rem,0)
+                    rotate(-40deg)
+                    skewX(70deg)
+                    scale(1.5);
+                  text-shadow: 0 0 20px whitesmoke;
+                  opacity: 0;
+                }
+            }
+              
+            @keyframes smoky-mirror {
+                60% {
+                  text-shadow: 0 0 40px whitesmoke; }
+                to {
+                  transform:
+                    translate3d(18rem,-8rem,0)
+                    rotate(-40deg) 
+                   
+                    scale(2);
+                   text-shadow: 0 0 20px whitesmoke;
+                  opacity: 0;
+                }
+            }
+              
+            @for $item from 1 through 76 {
+                span:nth-of-type(#{$item}){ 
+                  animation-delay: #{(4 + ($item/80))}s; 
+                }
+            } 
+        }
+
+        .segundo{
+            opacity: 0.0;
+            animation: fadeIn2 ease-in-out 8s;
+            animation-delay: 6s;
+
+            @keyframes fadeIn2 {
+            0% {opacity:0;}
+            50% {opacity:1;}
+            75% {opacity:0.5;}
+            }
+        }
+
+        .contenedor-nosotros{
+            margin-top: 3rem;
+            opacity: 0.0;
+            animation: fadeIn3 ease-in-out 4s forwards;
+            //animation-delay: 12s;
+
+            @keyframes fadeIn3 {
+            0% {opacity:0;}
+            100% {opacity:1;}
+            }
+
+            .contenedor-objetos{
+           
+                :nth-child(1){
+                    width: 213px;
+                    height: 167px;
+                    
+                    position: absolute;
+                    left: 80px;
+                    top: 157px;
+                }
+
+                :nth-child(2){
+                    width: 75px;
+                    height: 80px;
+
+                    position: absolute;
+                    top: 70px;
+                    left: 400px;   
+                }
+
+                :nth-child(3){
+                    width: 76px;
+                    height: 100px;
+
+                    position: absolute;
+                    top: 70px;
+                    left: 1050px;
+                }
+
+                :nth-child(4){
+                    width: 167;
+                    height: 147px;
+                    position: absolute;
+                    top: 127px;
+                    left: 1204px;  
+                }
+            }
+
+            .contenedor-objetos2{
+                :nth-child(1){
+                    width: 155px;
+                    height: 102px;
+
+                    position: absolute;
+                    top: 498px;
+                    left: 76px;
+                }
+
+                :nth-child(2){
+                    width: 50px;
+                    height: 50px;
+                }
+
+                :nth-child(3){
+                    width: 50px;
+                    height: 50px;
+                }
+
+                :nth-child(4){
+                    width: 50px;
+                    height: 50px;
+                }
+
+                :nth-child(5){
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .contenedor-objetos3{
+                :nth-child(1){
+                    width: 50px;
+                    height: 50px;
+                }
+
+                :nth-child(2){
+                    width: 50px;
+                    height: 50px;
+                }
+
+                :nth-child(3){
+                    width: 50px;
+                    height: 50px;
+                }
+
+                :nth-child(4){
+                    width: 50px;
+                    height: 50px;
+                }
+
+                :nth-child(5){
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .contenedor-texto{
+                width: 54rem;
+                height: 34.75rem;
+
+                background: linear-gradient(180deg, #7846A6 0%, #7846A6 100%);
+                box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+                border-radius: 30px;
+
+                h3{
+                    font-family: 'Poppins';
+                    font-weight: 700;
+                    font-size: 1.75rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin: 1.5rem 0 1rem 0;
+
+                    animation: glow 2500ms linear infinite 2000ms;
+
+                    @keyframes glow {
+                        40% {
+                            text-shadow: 0 0 8px #fff;
+                        }
+                    }
+                }
+
+                p{
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin: 0 6rem 1rem 6rem;
+
+                    span{
+                        font-weight: bolder;
+                    }
+                }
+            }
             
         }
     }  

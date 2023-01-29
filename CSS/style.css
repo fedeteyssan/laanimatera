@@ -10,53 +10,146 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #3e0a6f !important;
+  background-image: url("/Multimedia/bg-home.png");
 }
 
-#home img {
-  width: 20rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+#home .intro {
+  -webkit-animation: desaparece 0.1s linear 5s forwards;
+          animation: desaparece 0.1s linear 5s forwards;
+}
+
+@-webkit-keyframes desaparece {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes desaparece {
+  100% {
+    opacity: 0;
+  }
+}
+
+#home .intro .logo {
+  width: 25rem;
   position: relative;
-  bottom: 3rem;
+  bottom: 2rem;
+  left: 5rem;
 }
 
 @media only screen and (max-width: 425px) {
-  #home img {
+  #home .intro .logo {
     width: 10rem;
   }
 }
 
-#home h1 {
-  font-family: 'Aladin', cursive;
-  font-size: 4rem;
+#home .intro .libro {
+  position: absolute;
+  width: 36.8rem;
+  height: 36.4rem;
+  left: 663px;
+  top: 176px;
+  -webkit-animation: caidaLibro 3s ease forwards;
+          animation: caidaLibro 3s ease forwards;
+}
+
+@-webkit-keyframes caidaLibro {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes caidaLibro {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#home .intro h1 {
+  font-family: 'Julius Sans One';
+  font-size: 2rem;
   text-align: center;
-  color: #FAF4F4;
+  color: #FFFFFF;
+  -webkit-text-stroke: 1px #DDAA8F;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 500px;
+  left: 203px;
+  -webkit-animation: barridoTexto 4s ease-in-out forwards;
+          animation: barridoTexto 4s ease-in-out forwards;
+}
+
+@-webkit-keyframes barridoTexto {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes barridoTexto {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @media only screen and (max-width: 425px) {
-  #home h1 {
+  #home .intro h1 {
     font-size: 2rem;
   }
 }
 
-#home p {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  color: #FAF4F4;
-}
-
-@media only screen and (max-width: 425px) {
-  #home p {
-    font-size: 1rem;
-  }
-}
-
-#home p a {
-  text-decoration: underline;
-  color: #FAF4F4;
+#home .intro h1 hr {
+  width: 190px;
+  height: 30px;
+  border: solid 3px #FFFFFF;
+  border-color: #DDAA8F transparent transparent transparent;
+  border-radius: 80%/25px 25px 0 0;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  position: relative;
+  bottom: 1rem;
+  left: 8rem;
 }
 
 #quienesSomos {
@@ -86,7 +179,7 @@
   font-weight: 600;
 }
 
-#quienesSomos section h3 {
+#quienesSomos section .story-telling {
   font-family: 'Aladin';
   font-weight: 400;
   font-size: 5.625rem;
@@ -94,9 +187,659 @@
   text-align: center;
   color: #FAF4F4;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
   position: absolute;
-  top: 25%;
+  top: 20%;
+  opacity: 0.0;
+  -webkit-animation: fadeIn ease-in-out 3s forwards;
+          animation: fadeIn ease-in-out 3s forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#quienesSomos section .story-telling span {
+  letter-spacing: -1rem;
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  -webkit-animation: smoky 2.5s 1.5s both;
+          animation: smoky 2.5s 1.5s both;
+}
+
+#quienesSomos section .story-telling span:nth-child(even) {
+  -webkit-animation-name: smoky-mirror;
+          animation-name: smoky-mirror;
+}
+
+@-webkit-keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    -webkit-transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+            transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    -webkit-transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+            transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    -webkit-transform: translate3d(18rem, -8rem, 0) rotate(-40deg) scale(2);
+            transform: translate3d(18rem, -8rem, 0) rotate(-40deg) scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    -webkit-transform: translate3d(18rem, -8rem, 0) rotate(-40deg) scale(2);
+            transform: translate3d(18rem, -8rem, 0) rotate(-40deg) scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+#quienesSomos section .story-telling span:nth-of-type(1) {
+  -webkit-animation-delay: 4.0125s;
+          animation-delay: 4.0125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(2) {
+  -webkit-animation-delay: 4.025s;
+          animation-delay: 4.025s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(3) {
+  -webkit-animation-delay: 4.0375s;
+          animation-delay: 4.0375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(4) {
+  -webkit-animation-delay: 4.05s;
+          animation-delay: 4.05s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(5) {
+  -webkit-animation-delay: 4.0625s;
+          animation-delay: 4.0625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(6) {
+  -webkit-animation-delay: 4.075s;
+          animation-delay: 4.075s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(7) {
+  -webkit-animation-delay: 4.0875s;
+          animation-delay: 4.0875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(8) {
+  -webkit-animation-delay: 4.1s;
+          animation-delay: 4.1s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(9) {
+  -webkit-animation-delay: 4.1125s;
+          animation-delay: 4.1125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(10) {
+  -webkit-animation-delay: 4.125s;
+          animation-delay: 4.125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(11) {
+  -webkit-animation-delay: 4.1375s;
+          animation-delay: 4.1375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(12) {
+  -webkit-animation-delay: 4.15s;
+          animation-delay: 4.15s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(13) {
+  -webkit-animation-delay: 4.1625s;
+          animation-delay: 4.1625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(14) {
+  -webkit-animation-delay: 4.175s;
+          animation-delay: 4.175s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(15) {
+  -webkit-animation-delay: 4.1875s;
+          animation-delay: 4.1875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(16) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(17) {
+  -webkit-animation-delay: 4.2125s;
+          animation-delay: 4.2125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(18) {
+  -webkit-animation-delay: 4.225s;
+          animation-delay: 4.225s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(19) {
+  -webkit-animation-delay: 4.2375s;
+          animation-delay: 4.2375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(20) {
+  -webkit-animation-delay: 4.25s;
+          animation-delay: 4.25s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(21) {
+  -webkit-animation-delay: 4.2625s;
+          animation-delay: 4.2625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(22) {
+  -webkit-animation-delay: 4.275s;
+          animation-delay: 4.275s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(23) {
+  -webkit-animation-delay: 4.2875s;
+          animation-delay: 4.2875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(24) {
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(25) {
+  -webkit-animation-delay: 4.3125s;
+          animation-delay: 4.3125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(26) {
+  -webkit-animation-delay: 4.325s;
+          animation-delay: 4.325s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(27) {
+  -webkit-animation-delay: 4.3375s;
+          animation-delay: 4.3375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(28) {
+  -webkit-animation-delay: 4.35s;
+          animation-delay: 4.35s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(29) {
+  -webkit-animation-delay: 4.3625s;
+          animation-delay: 4.3625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(30) {
+  -webkit-animation-delay: 4.375s;
+          animation-delay: 4.375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(31) {
+  -webkit-animation-delay: 4.3875s;
+          animation-delay: 4.3875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(32) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(33) {
+  -webkit-animation-delay: 4.4125s;
+          animation-delay: 4.4125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(34) {
+  -webkit-animation-delay: 4.425s;
+          animation-delay: 4.425s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(35) {
+  -webkit-animation-delay: 4.4375s;
+          animation-delay: 4.4375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(36) {
+  -webkit-animation-delay: 4.45s;
+          animation-delay: 4.45s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(37) {
+  -webkit-animation-delay: 4.4625s;
+          animation-delay: 4.4625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(38) {
+  -webkit-animation-delay: 4.475s;
+          animation-delay: 4.475s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(39) {
+  -webkit-animation-delay: 4.4875s;
+          animation-delay: 4.4875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(40) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(41) {
+  -webkit-animation-delay: 4.5125s;
+          animation-delay: 4.5125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(42) {
+  -webkit-animation-delay: 4.525s;
+          animation-delay: 4.525s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(43) {
+  -webkit-animation-delay: 4.5375s;
+          animation-delay: 4.5375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(44) {
+  -webkit-animation-delay: 4.55s;
+          animation-delay: 4.55s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(45) {
+  -webkit-animation-delay: 4.5625s;
+          animation-delay: 4.5625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(46) {
+  -webkit-animation-delay: 4.575s;
+          animation-delay: 4.575s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(47) {
+  -webkit-animation-delay: 4.5875s;
+          animation-delay: 4.5875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(48) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(49) {
+  -webkit-animation-delay: 4.6125s;
+          animation-delay: 4.6125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(50) {
+  -webkit-animation-delay: 4.625s;
+          animation-delay: 4.625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(51) {
+  -webkit-animation-delay: 4.6375s;
+          animation-delay: 4.6375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(52) {
+  -webkit-animation-delay: 4.65s;
+          animation-delay: 4.65s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(53) {
+  -webkit-animation-delay: 4.6625s;
+          animation-delay: 4.6625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(54) {
+  -webkit-animation-delay: 4.675s;
+          animation-delay: 4.675s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(55) {
+  -webkit-animation-delay: 4.6875s;
+          animation-delay: 4.6875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(56) {
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(57) {
+  -webkit-animation-delay: 4.7125s;
+          animation-delay: 4.7125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(58) {
+  -webkit-animation-delay: 4.725s;
+          animation-delay: 4.725s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(59) {
+  -webkit-animation-delay: 4.7375s;
+          animation-delay: 4.7375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(60) {
+  -webkit-animation-delay: 4.75s;
+          animation-delay: 4.75s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(61) {
+  -webkit-animation-delay: 4.7625s;
+          animation-delay: 4.7625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(62) {
+  -webkit-animation-delay: 4.775s;
+          animation-delay: 4.775s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(63) {
+  -webkit-animation-delay: 4.7875s;
+          animation-delay: 4.7875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(64) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(65) {
+  -webkit-animation-delay: 4.8125s;
+          animation-delay: 4.8125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(66) {
+  -webkit-animation-delay: 4.825s;
+          animation-delay: 4.825s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(67) {
+  -webkit-animation-delay: 4.8375s;
+          animation-delay: 4.8375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(68) {
+  -webkit-animation-delay: 4.85s;
+          animation-delay: 4.85s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(69) {
+  -webkit-animation-delay: 4.8625s;
+          animation-delay: 4.8625s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(70) {
+  -webkit-animation-delay: 4.875s;
+          animation-delay: 4.875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(71) {
+  -webkit-animation-delay: 4.8875s;
+          animation-delay: 4.8875s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(72) {
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(73) {
+  -webkit-animation-delay: 4.9125s;
+          animation-delay: 4.9125s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(74) {
+  -webkit-animation-delay: 4.925s;
+          animation-delay: 4.925s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(75) {
+  -webkit-animation-delay: 4.9375s;
+          animation-delay: 4.9375s;
+}
+
+#quienesSomos section .story-telling span:nth-of-type(76) {
+  -webkit-animation-delay: 4.95s;
+          animation-delay: 4.95s;
+}
+
+#quienesSomos section .segundo {
+  opacity: 0.0;
+  -webkit-animation: fadeIn2 ease-in-out 8s;
+          animation: fadeIn2 ease-in-out 8s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+@-webkit-keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+
+#quienesSomos section .contenedor-nosotros {
+  margin-top: 3rem;
+  opacity: 0.0;
+  -webkit-animation: fadeIn3 ease-in-out 4s forwards;
+          animation: fadeIn3 ease-in-out 4s forwards;
+}
+
+@-webkit-keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos :nth-child(1) {
+  width: 213px;
+  height: 167px;
+  position: absolute;
+  left: 80px;
+  top: 157px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos :nth-child(2) {
+  width: 75px;
+  height: 80px;
+  position: absolute;
+  top: 70px;
+  left: 400px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos :nth-child(3) {
+  width: 76px;
+  height: 100px;
+  position: absolute;
+  top: 70px;
+  left: 1050px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos :nth-child(4) {
+  width: 167;
+  height: 147px;
+  position: absolute;
+  top: 127px;
+  left: 1204px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(1) {
+  width: 155px;
+  height: 102px;
+  position: absolute;
+  top: 498px;
+  left: 76px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(2) {
+  width: 50px;
+  height: 50px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(3) {
+  width: 50px;
+  height: 50px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(4) {
+  width: 50px;
+  height: 50px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(5) {
+  width: 50px;
+  height: 50px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(1) {
+  width: 50px;
+  height: 50px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(2) {
+  width: 50px;
+  height: 50px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(3) {
+  width: 50px;
+  height: 50px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(4) {
+  width: 50px;
+  height: 50px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(5) {
+  width: 50px;
+  height: 50px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-texto {
+  width: 54rem;
+  height: 34.75rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7846A6), to(#7846A6));
+  background: linear-gradient(180deg, #7846A6 0%, #7846A6 100%);
+  -webkit-box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-texto h3 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 1.5rem 0 1rem 0;
+  -webkit-animation: glow 2500ms linear infinite 2000ms;
+          animation: glow 2500ms linear infinite 2000ms;
+}
+
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-texto p {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 6rem 1rem 6rem;
+}
+
+#quienesSomos section .contenedor-nosotros .contenedor-texto p span {
+  font-weight: bolder;
 }
 
 #propuestas {
