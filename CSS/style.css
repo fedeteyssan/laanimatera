@@ -2059,12 +2059,16 @@
   z-index: 1;
   -webkit-animation: volarHeroe 1s linear forwards;
           animation: volarHeroe 1s linear forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
 }
 
 @-webkit-keyframes volarHeroe {
   0% {
     -webkit-transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
             transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
+    opacity: 1;
   }
   50% {
     -webkit-transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
@@ -2073,6 +2077,7 @@
   100% {
     -webkit-transform: translate3d(-100px, -150px, 0px) rotate(0deg);
             transform: translate3d(-100px, -150px, 0px) rotate(0deg);
+    opacity: 1;
   }
 }
 
@@ -2080,6 +2085,7 @@
   0% {
     -webkit-transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
             transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
+    opacity: 1;
   }
   50% {
     -webkit-transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
@@ -2088,6 +2094,7 @@
   100% {
     -webkit-transform: translate3d(-100px, -150px, 0px) rotate(0deg);
             transform: translate3d(-100px, -150px, 0px) rotate(0deg);
+    opacity: 1;
   }
 }
 
@@ -2095,6 +2102,8 @@
   width: 15rem;
   -webkit-animation: rotarHeroe 2s linear infinite;
           animation: rotarHeroe 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes rotarHeroe {
@@ -2141,20 +2150,26 @@
   z-index: 1;
   -webkit-animation: barridoHeroina 1s linear forwards;
           animation: barridoHeroina 1s linear forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
 }
 
 @-webkit-keyframes barridoHeroina {
   0% {
     -webkit-transform: translate3d(-2000px, 0px, 0px);
             transform: translate3d(-2000px, 0px, 0px);
+    opacity: 1;
   }
   50% {
     -webkit-transform: translate3d(10px, 0px, 0px);
             transform: translate3d(10px, 0px, 0px);
+    opacity: 1;
   }
   100% {
     -webkit-transform: translate3d(50px, 0px, 0px);
             transform: translate3d(50px, 0px, 0px);
+    opacity: 1;
   }
 }
 
@@ -2162,14 +2177,17 @@
   0% {
     -webkit-transform: translate3d(-2000px, 0px, 0px);
             transform: translate3d(-2000px, 0px, 0px);
+    opacity: 1;
   }
   50% {
     -webkit-transform: translate3d(10px, 0px, 0px);
             transform: translate3d(10px, 0px, 0px);
+    opacity: 1;
   }
   100% {
     -webkit-transform: translate3d(50px, 0px, 0px);
             transform: translate3d(50px, 0px, 0px);
+    opacity: 1;
   }
 }
 
@@ -2177,8 +2195,8 @@
   width: 12rem;
   -webkit-animation: transporteHeroina 3s ease infinite;
           animation: transporteHeroina 3s ease infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @-webkit-keyframes transporteHeroina {
