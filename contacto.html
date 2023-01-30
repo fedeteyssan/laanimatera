@@ -64,41 +64,41 @@
 
                     <div class="d-flex justify-content-between container-nombre-apellido">
                         <div class="mb-3">
-                            <label for="Nombre" class="form-label">Nombre*</label>
-                            <input type="text" class="form-control" id="Nombre" aria-describedby="">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="" required>
                           </div>
                   
                           <div class="mb-3">
-                              <label for="Apelido" class="form-label">Apellido*</label>
-                              <input type="text" class="form-control" id="Apellido" aria-describedby="">
+                              <label for="apelido" class="form-label">Apellido:</label>
+                              <input type="text" class="form-control" id="apellido" aria-describedby="" required>
                           </div>
                     </div>
             
                     <div>
                         <div class="mb-3">
-                            <label for="Teléfono" class="form-label">Teléfono*</label>
-                            <input type="number" class="form-control" id="Teléfono" aria-describedby="">
+                            <label for="telefono" class="form-label">Teléfono:</label>
+                            <input type="number" class="form-control" id="telefono" aria-describedby="" required>
                           </div>
                     </div>
             
                     <div>
                         <div class="mb-3">
-                            <label for="Email" class="form-label">Email*</label>
-                            <input type="text" class="form-control" id="Email" aria-describedby="">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="" required >
                           </div>
                     </div>
             
                     <div>
                         <div class="mb-3">
-                            <label for="Evento" class="form-label">Tipo de evento*</label>
-                            <input type="text" class="form-control" id="Evento" aria-describedby="">
+                            <label for="evento" class="form-label">Tipo de evento:</label>
+                            <input type="text" class="form-control" id="evento" aria-describedby="" required>
                           </div>
                     </div>
             
                     <div>
                         <div class="mb-3">
-                            <label for="Edad" class="form-label">Edad de l@s asistentes*</label>
-                            <input type="number" class="form-control" id="Edad" aria-describedby="">
+                            <label for="edad" class="form-label">Edad de l@s asistentes:</label>
+                            <input type="number" class="form-control" id="edad" aria-describedby="" required>
                           </div>
                     </div>
                 </div>
@@ -107,22 +107,22 @@
             
                     <div>
                         <div class="mb-3">
-                            <label for="Lugar" class="form-label">Lugar del evento (Localidad)*</label>
-                            <input type="text" class="form-control" id="Lugar" aria-describedby="">
+                            <label for="lugar" class="form-label">Lugar del evento (Localidad):</label>
+                            <input type="text" class="form-control" id="lugar" aria-describedby="" required>
                           </div>
                     </div>
             
                     <div>
                         <div class="mb-3">
-                            <label for="Asistentes" class="form-label">Cantidad de asistentes*</label>
-                            <input type="number" class="form-control" id="Asistentes" aria-describedby="">
+                            <label for="asistentes" class="form-label">Cantidad de asistentes:</label>
+                            <input type="number" class="form-control" id="asistentes" aria-describedby="" required>
                           </div>
                     </div>
             
                     <div>
                         <div class="mb-3">
-                            <label for="Consulta" class="form-label">Mensaje de consulta</label>
-                            <textarea class="form-control" rows="8"id="Consulta" aria-describedby=""></textarea>
+                            <label for="consulta" class="form-label">Mensaje de consulta:</label>
+                            <textarea class="form-control" rows="8"id="mensaje" aria-describedby=""></textarea>
                         </div>
                     </div>
         
@@ -130,7 +130,7 @@
 
             </div>
 
-            <button type="submit" class="btn">Enviar</button>
+            <button type="submit" class="btn" onclick="sendMail()">Enviar</button>
 
         </form>
     </section>
@@ -143,12 +143,15 @@
     </div>
    
 
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   
 
-    <script>
-        window.onload();
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Xm95i5eUzw_jcmsnH");
+        })();
     </script>
+    <script src="index.js"></script>
 
 </body>
 </html>
