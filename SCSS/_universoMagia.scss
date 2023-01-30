@@ -34,8 +34,6 @@
             z-index: 2;     
         }
     
-       
-    
         .texto-propuesta{
             position: relative;
             top:5rem;
@@ -73,7 +71,15 @@
         border-radius: 20px;
 
         width: fit-content;
-        padding: 0.5rem 1rem 0.5rem 4rem;
+        width: fit-content;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        .arrow{
+            width: 20px;
+            position: relative;
+            bottom: 2px;
+            right: 2px;
+        }
 
         a{
             text-decoration: none;

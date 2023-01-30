@@ -1,6 +1,12 @@
 nav{
     z-index: 10;
     padding-top: 2rem;
+
+    .logo-nav{
+        width: 100px;
+        margin-left: 2rem;
+    }
+
     ul{
         li{
             a{

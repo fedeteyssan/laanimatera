@@ -5,14 +5,109 @@
     background-image: url("/Multimedia/bg-aventura.png");
     background-repeat: no-repeat;
     background-size: cover;
-    
 
     min-height: 100vh;
 
     overflow-x: hidden;
     overflow-y: hidden;   
 
+    section{
 
+        height: 100%;
+
+        .titulo-propuesta{
+            font-family: 'Aladin';
+            font-weight: 400;
+            font-size: 5.625rem;
+            line-height: 110px;
+            color: #FAF4F4;
+            text-transform: uppercase;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            height: fit-content;
+            min-width: fit-content; 
+
+            position: relative;
+            top: 8rem;
+            left: 4rem;
+            z-index: 2;     
+        }
+
+        .contenedor-buho{
+            position: relative;
+            top: 0rem;
+            left: 5rem;
+            z-index: 1;
+            animation: rotateAstro 5s linear infinite;
+    
+            @keyframes rotateAstro {
+                0%{
+                    transform: rotate(0deg) ;
+                }
+    
+                25%{
+                    transform: rotate(10deg) ;
+                }
+    
+                50%{
+                    transform: rotate(0deg) ;
+                }
+    
+                75%{
+                    transform: rotate(-10deg) ;
+                }
+            }
+    
+            .buho{
+                width: 10rem;
+                animation: moveAstro 5s linear infinite;
+            }
+        
+            @keyframes moveAstro {
+                0%{
+                    transform: translate3d(0,0,0)
+                }
+    
+                25%{
+                    transform: translate3d(50px,50px,0)
+                }
+    
+                50%{
+                    transform: translate3d(100px,100px,0)
+                }
+    
+                75%{
+                    transform: translate3d(50px,50px,0)
+                }
+            }
+        }  
+    
+        .texto-propuesta{
+            position: relative;
+            top:5rem;
+            left: 20.7rem;
+            height: fit-content;
+
+            p{
+                width: 80%;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 0.8rem;
+                line-height: 27px;
+                text-align: center;
+                color: #FFFFFF; 
+                position: absolute;
+                left:250px; 
+                top:170px;
+                transform: translate(-50%,-50%);
+
+                span{
+                    width: 50%;
+                    font-style: italic;
+                }
+            }   
+        }
+    }
 
     .volver{
         position: relative;
@@ -24,7 +119,14 @@
         border-radius: 20px;
 
         width: fit-content;
-        padding: 0.5rem 1rem 0.5rem 4rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        .arrow{
+            width: 20px;
+            position: relative;
+            bottom: 2px;
+            right: 2px;
+        }
 
         a{
             text-decoration: none;
