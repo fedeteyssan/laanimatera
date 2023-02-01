@@ -45,10 +45,9 @@
 
 #home .intro .libro {
   position: absolute;
-  width: 36.8rem;
-  height: 36.4rem;
-  left: 663px;
-  top: 176px;
+  width: 40%;
+  left: 45%;
+  top: 20%;
   -webkit-animation: caidaLibro 3s ease forwards;
           animation: caidaLibro 3s ease forwards;
 }
@@ -1079,6 +1078,8 @@
   opacity: 0.0;
   -webkit-animation: fadeIn3 ease-in-out 4s forwards;
           animation: fadeIn3 ease-in-out 4s forwards;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 
 @-webkit-keyframes fadeIn3 {
