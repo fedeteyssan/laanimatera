@@ -1165,12 +1165,11 @@
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos2 :nth-child(5) {
   width: 8%;
-  height: 50%;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
   position: absolute;
   top: 35%;
-  left: 90%;
+  left: 93%;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(1) {
