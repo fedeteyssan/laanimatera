@@ -4,7 +4,7 @@
 
     background:#B4A99A;
     min-height: 100vh;
-    min-width: 1440px;
+    min-width: 100vw;
 
 
     section{
@@ -18,8 +18,9 @@
             color: #FAF4F4;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+            margin: 0 auto;
             position: absolute;
-            top:25%;
+            top:20%;
 
             opacity: 0.0;
             animation: fadeIn ease-in-out 3s forwards;
@@ -65,7 +66,7 @@
                    
                     scale(2);
                    text-shadow: 0 0 20px whitesmoke;
-                  opacity: 0;
+                   opacity: 0;
                 }
             }
               
@@ -90,11 +91,13 @@
 
         .contenedor-nosotros{
             position: relative;
+            width: 100%;
+            height: 100%;
+            margin-top: 1%;
           
-            margin-top: 3rem;
             opacity: 0.0;
             animation: fadeIn3 ease-in-out 4s forwards;
-            animation-delay: 12s;
+            //animation-delay: 12s;
 
             @keyframes fadeIn3 {
             0% {opacity:0;}
@@ -102,143 +105,135 @@
             }
 
             .contenedor-objetos{
+                width: 100%;
            
                 :nth-child(1){
-                    width: 210px;
-                    height: 165px;
+                   width: 12.5%;
                     
                     position: absolute;
                     top: 0px;
-                    left: -180px;
+                    left: 5%;
                 }
 
                 :nth-child(2){
-                    width: 75px;
-                    height: 80px;
+                    width: 5%;
 
                     position: absolute;
-                    top: -65px;
-                    left: 190px;   
+                    top:-4%;
+                    left: 30%;   
                 }
 
                 :nth-child(3){
-                    width: 100px;
-                    height: 125px;
+                    width: 7.5%;
 
                     position: absolute;
-                    top: -50px;
-                    left: 760px;
+                    top: -5%;
+                    left: 65%;
                 }
 
                 :nth-child(4){
-                    width: 165;
-                    height: 145px;
+                    width: 12.5%;
 
                     position: absolute;
-                    top: 15px;
-                    left: 900px;  
+                    top: 1%;
+                    left: 85%;  
                 }
             }
 
             .contenedor-objetos2{
+                width: 100%;
+
                 :nth-child(1){
-                    width: 125px;
-                    height: 80px;
+                    width: 10%;
 
                     position: absolute;
-                    top: 350px;
-                    left: -200px;
+                    top: 60%;
+                    left: 3.5%;
                 }
 
                 :nth-child(2){
-                    width: 110px;
-                    height: 100;
+                    width: 8%;
 
                     position: absolute;
-                    top: 250px;
-                    left: -50px;
+                    top: 35%;
+                    left: 12.5%;
                 }
 
                 :nth-child(3){
-                    width: 120px;
-                    height: 105px;
+                    width: 8%;
 
                     position: absolute;
-                    left: 750px;
-                    top: 480px;
+                    top: 82%;
+                    left: 78%;
                 }
 
                 :nth-child(4){
-                    width: 100px;
-                    height: 140px;
-                    
+                    width: 8%;
+
                     position: absolute;
-                    left: 800px;
-                    top: 200px;
+                    top: 40%;
+                    left: 79%;
                 }
 
                 :nth-child(5){
-                    width: 70px;
-                    height: 285px;
+                    width: 8%;
+                    height: 50%;
 
                     transform: rotate(-25deg);
                     position: absolute;
-                    left: 1000px;
-                    top: 200px;
+                    top: 35%;
+                    left: 90%;
                 }
             }
 
             .contenedor-objetos3{
                 :nth-child(1){
-                    width: 240px;
-                    height: 235px;
-                    
+                    width: 20%;
+
                     position: absolute;
-                    left: -150px;
-                    top: 460px; 
+                    top: 75%;
+                    left: 3.5%;
                 }
 
                 :nth-child(2){
-                    width: 125px;
-                    height: 90px;
+                    width: 10%;
 
                     position: absolute;
-                    left: 205px;
-                    top: 590px; 
+                    top: 95%;
+                    left:30%;
                 }
 
                 :nth-child(3){
-                    width: 100px;
-                    height: 140px;
-                    
-                    transform: rotate(25deg);
+                    width: 7.5%;
+
                     position: absolute;
-                    left: 430px;
-                    top: 540px; 
+                    top: 90%;
+                    left:50%;
+                    
+                    transform: rotate(20deg);
                 }
 
                 :nth-child(4){
-                    width: 65px;
-                    height: 100px;
+                    width: 5%;
 
                     position: absolute;
-                    left: 650px;
-                    top: 570px; 
+                    top: 90%;
+                    left:65%;
                 }
 
                 :nth-child(5){
-                    width: 280px;
-                    height: 290px;
+                    width: 20%;
 
                     position: absolute;
-                    left: 850px;
-                    top: 420px; 
+                    top: 78%;
+                    left:82%;
                 }
             }
 
             .contenedor-texto{
-                width: 54rem;
-                height: 34.75rem;
+                width: 68%;
+               
+                margin: 1rem auto;
 
                 background: linear-gradient(180deg, #7846A6 0%, #7846A6 100%);
                 box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
@@ -268,7 +263,7 @@
                     line-height: 1.75rem;
                     text-align: center;
                     color: #FFFFFF;
-                    margin: 0 6rem 1rem 6rem;
+                    padding: 0 1rem;
 
                     span{
                         font-weight: bolder;
