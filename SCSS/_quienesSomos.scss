@@ -3,11 +3,9 @@
     @import '../SCSS/componentes/navbar';
 
     background:#B4A99A;
-
     min-height: 100vh;
+    min-width: 1440px;
 
-    overflow-x: hidden;
-    overflow-y: hidden;
 
     section{
 
@@ -215,7 +213,7 @@
                     
                     transform: rotate(25deg);
                     position: absolute;
-                    left: 480px;
+                    left: 430px;
                     top: 540px; 
                 }
 
@@ -224,8 +222,8 @@
                     height: 100px;
 
                     position: absolute;
-                    left: 900px;
-                    top: 700px; 
+                    left: 650px;
+                    top: 570px; 
                 }
 
                 :nth-child(5){

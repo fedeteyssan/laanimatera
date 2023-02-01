@@ -10,7 +10,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/Multimedia/bg-home.png");
+  background-image: url("/Multimedia/bg-home.webp");
 }
 
 #home .intro {
@@ -536,8 +536,7 @@
 #quienesSomos {
   background: #B4A99A;
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  min-width: 1440px;
 }
 
 #quienesSomos nav {
@@ -1195,7 +1194,7 @@
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
   position: absolute;
-  left: 480px;
+  left: 430px;
   top: 540px;
 }
 
@@ -1203,8 +1202,8 @@
   width: 65px;
   height: 100px;
   position: absolute;
-  left: 900px;
-  top: 700px;
+  left: 650px;
+  top: 570px;
 }
 
 #quienesSomos section .contenedor-nosotros .contenedor-objetos3 :nth-child(5) {
@@ -1266,8 +1265,6 @@
   background: radial-gradient(31.15% 53.79% at 50% 45.61%, #E3DDD3 22.4%, #B4A99A 99.9%);
   opacity: 0.8;
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #propuestas nav {
@@ -1378,7 +1375,7 @@
 }
 
 #universoAventura {
-  background-image: url("/Multimedia/bg-aventura.png");
+  background-image: url("/Multimedia/bg-aventura.webp");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -1585,7 +1582,7 @@
 }
 
 #universoEspacio {
-  background-image: url("/Multimedia/bg-espacio.png");
+  background-image: url("/Multimedia/bg-espacio.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -1px;
@@ -1755,7 +1752,7 @@
 }
 
 #universoIslaPirata {
-  background-image: url("/Multimedia/bg-piratas.png");
+  background-image: url("/Multimedia/bg-piratas.webp");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -1995,7 +1992,7 @@
 }
 
 #universoLigaHeroica {
-  background-image: url("/Multimedia/bg-liga.png");
+  background-image: url("/Multimedia/bg-liga.webp");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -2280,7 +2277,7 @@
 }
 
 #universoMagia {
-  background-image: url("/Multimedia/bg-magia.png");
+  background-image: url("/Multimedia/bg-magia.webp");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -2396,46 +2393,13 @@
   color: #FFFFFF;
 }
 
-#galeriaFotos {
-  background: radial-gradient(31.15% 53.79% at 50% 45.61%, #E3DDD3 22.4%, #B4A99A 99.9%);
-  opacity: 0.8;
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-#galeriaFotos nav {
-  z-index: 10;
-  padding-top: 2rem;
-}
-
-#galeriaFotos nav .logo-nav {
-  width: 100px;
-  margin-left: 2rem;
-}
-
-#galeriaFotos nav ul li a {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 1.125rem;
-  color: #F3EFEF;
-  margin: 0 1rem;
-  padding: 0.25rem 1rem;
-}
-
-#galeriaFotos nav ul li .active {
-  border: 1px solid #F9F3F3;
-  border-radius: 25px;
-  font-weight: 600;
-}
-
 #contacto {
   background-image: url("../Multimedia/bg-contacto.webp");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: scroll;
   min-height: 100vh;
-  background-position: 0rem -3rem;
-  overflow-y: hidden;
 }
 
 #contacto nav {
@@ -2463,10 +2427,23 @@
   font-weight: 600;
 }
 
+#contacto .redes-sociales {
+  position: absolute;
+  left: 93%;
+  bottom: 10%;
+}
+
+#contacto .redes-sociales img {
+  width: 3rem;
+  padding-top: 0.5rem;
+  -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+          filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+}
+
 #contacto form {
-  width: 1170px;
-  height: 630px;
-  margin: 1rem 0 0 3rem;
+  width: 80%;
+  height: 100%;
+  margin: 1% 0 10% 3%;
   background: rgba(253, 249, 249, 0.75);
   border: 1px solid rgba(44, 38, 108, 0.33);
   -webkit-box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
@@ -2487,10 +2464,6 @@
   margin: 1rem 1.5rem 0 3rem;
 }
 
-#contacto form .form-column-1 .container-nombre-apellido input {
-  width: 14.25rem;
-}
-
 #contacto form .form-column-2 {
   margin: 1rem 0 0 1.5rem;
 }
@@ -2505,7 +2478,7 @@
 }
 
 #contacto form input {
-  width: 29.25rem;
+  width: 100%;
   height: 2.25rem;
   background: rgba(247, 236, 236, 0.75);
   border-radius: 15px;
@@ -2519,7 +2492,7 @@
 #contacto form button {
   width: 8.75rem;
   height: 2.5rem;
-  margin: 1rem 6rem 0 0;
+  margin: 1rem 6rem 1.5rem 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2532,20 +2505,6 @@
   font-size: 1.25rem;
   text-align: center;
   color: #FFFFFF;
-}
-
-#contacto .redes-sociales {
-  float: right;
-  margin-right: 1rem;
-  position: relative;
-  bottom: 15rem;
-}
-
-#contacto .redes-sociales img {
-  width: 3rem;
-  padding-top: 0.5rem;
-  -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
-          filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
 }
 
 * {
