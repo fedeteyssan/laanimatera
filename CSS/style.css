@@ -2488,7 +2488,7 @@
 #contacto form button {
   width: 8.75rem;
   height: 2.5rem;
-  margin: 1rem 6rem 1.5rem 0;
+  margin: 0rem 0rem 1.5rem 16rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2501,6 +2501,84 @@
   font-size: 1.25rem;
   text-align: center;
   color: #FFFFFF;
+}
+
+#confirmacion {
+  background-image: url("../Multimedia/bg-contacto.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: scroll;
+  min-height: 100vh;
+}
+
+#confirmacion nav {
+  z-index: 10;
+  padding-top: 2rem;
+}
+
+#confirmacion nav .logo-nav {
+  width: 100px;
+  margin-left: 2rem;
+}
+
+#confirmacion nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#confirmacion nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+#confirmacion .redes-sociales {
+  position: absolute;
+  left: 93%;
+  bottom: 10%;
+}
+
+#confirmacion .redes-sociales img {
+  width: 3rem;
+  padding-top: 0.5rem;
+  -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+          filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+}
+
+#confirmacion .mensajeFinal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 20%;
+  position: absolute;
+  left: 15.69%;
+  top: 39.84%;
+  background: rgba(253, 249, 249, 0.75);
+  border: 1px solid rgba(44, 38, 108, 0.33);
+  -webkit-box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 57px;
+}
+
+#confirmacion .mensajeFinal p {
+  font-family: 'Julius Sans One';
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 31px;
+  text-align: center;
+  color: #613689;
 }
 
 * {

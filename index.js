@@ -66,7 +66,7 @@ function sendMail(){
         mensaje: document.getElementById("mensaje").value,
     }
 
-    const serviceID = "service_ud25szg";
+    const serviceID = "service_m5ng0nk";
     const templateID = "template_ijjl1tk";
 
     emailjs.send(serviceID,templateID,params)
@@ -83,6 +83,7 @@ function sendMail(){
             document.getElementById("cantidad").value="";
             document.getElementById("mensaje").value="";
             document.getElementById("contact-form").reset();
+            window.location.href="confirmacion.html";
             console.log(res);
         })
     .catch((err)=>console.log(err));
