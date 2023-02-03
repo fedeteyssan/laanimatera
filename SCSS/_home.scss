@@ -1,11 +1,26 @@
 #home{
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   background-image: url("/Multimedia/bg-home.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+
 
   .intro{
+    min-height: 100vh;
+
+    /*Mobile*/
+    @media only screen and (max-width:768px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     animation: desapareceIntro 0.1s linear 5s forwards;
 
     @keyframes desapareceIntro {
@@ -15,12 +30,14 @@
     }
 
     .logo{
-      width: 25rem; 
-      position: relative; 
-      top:10rem;
-      left: 5rem;
+      width: 30%; 
+      position: absolute; 
+      top:10%;
+      left: 5%;
     
-      @media only screen and (max-width:425px){
+      /*Mobile*/
+      @media only screen and (max-width:768px){
+        top: 15%;
         width: 10rem;
       }
     }
@@ -30,6 +47,14 @@
       width: 40%;
       left: 45%;
       top: 20%;
+
+      /*Mobile*/
+      @media only screen and (max-width:768px){
+        position: relative;
+        width: 280px;
+        top: 0;
+        left: 0;;
+      }
       
       animation: caidaLibro 3s ease forwards;
     
@@ -62,7 +87,7 @@
     
       position: absolute;
       top: 60%;
-      left: 15%;
+      left: 7.5%;
     
       animation: barridoTexto 4s ease-in-out forwards;
     
@@ -77,8 +102,10 @@
         }
       }
     
-      @media only screen and (max-width:425px){
-        font-size: 2rem;
+      /*Mobile*/
+      @media only screen and (max-width:768px){
+        font-size: 1.5rem;
+        top: 72%;
       }
     
       hr{
@@ -87,6 +114,12 @@
         border-color:#DDAA8F transparent transparent transparent;
         border-radius: 80%/25px 25px 0 0;
         transform: rotate(-5deg);
+
+        /*Mobile*/
+        @media only screen and (max-width:768px){
+          width:95px; height:15px;  
+          
+        }
         
         position: relative;
         bottom: 1rem;
@@ -97,13 +130,14 @@
 
   .contenedor {
     width: 100%;
+    min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 1200px;
-    position: relative;
-    bottom: 90px;
-
+    position: absolute;
+   
     animation: apareceLibro 2s linear forwards;
     animation-delay: 5s;
     opacity: 0;
@@ -115,10 +149,23 @@
     }
 
     .book {
+      
       transform-style: preserve-3d;
       position: relative;
       height: 500px;
       backface-visibility: visible;
+
+      /*Mobile*/
+      @media only screen and (max-width:768px){
+        width: 100%;
+        height: 250px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
       animation: grow 2s ease forwards;
       animation-delay: 6s;
 
@@ -140,10 +187,19 @@
         border-bottom-right-radius: .5em;
         border-top-right-radius: .5em;
 
+        /*Mobile*/
+        @media only screen and (max-width:768px){
+          position: relative  ;
+          width: 195px;
+          height:265px;
+          
+        }
+
         transform: translate(-35px,-20px);
         transform-style: preserve-3d; 
         transform-origin: left center;
         transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+        
 
         animation: abrirFront 1s linear forwards;
         animation-delay: 6s;
@@ -165,6 +221,12 @@
         background: #B4A99A;
         border-bottom-right-radius: .5em;
         border-top-right-radius: .5em;
+
+        /*Mobile*/
+        @media only screen and (max-width:768px){
+          width: 175px;
+          
+        }
 
         transform-style: preserve-3d;
         transform-origin: left center;
@@ -191,6 +253,8 @@
         border-bottom-right-radius: .5em;
         border-top-right-radius: .5em;
 
+        
+
         transform-origin: left center;
         transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
 
@@ -214,6 +278,8 @@
         background: #b1aba2;
         border-bottom-right-radius: .5em;
         border-top-right-radius: .5em;
+
+       
 
         transform-origin: left center;
         transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
@@ -239,6 +305,8 @@
         border-bottom-right-radius: .5em;
         border-top-right-radius: .5em;
 
+        
+
         transform-origin: left center;
         transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
 
@@ -262,6 +330,8 @@
         background: #B4A99A;
         border-bottom-right-radius: .5em;
         border-top-right-radius: .5em;
+
+        
 
         transform-origin: left center;
         transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
@@ -287,6 +357,8 @@
         border-bottom-right-radius: .5em;
         border-top-right-radius: .5em;
 
+        
+
         transform-origin: left center;
         transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
 
@@ -310,6 +382,8 @@
         background: transparent;
         border-bottom-right-radius: .5em;
         border-top-right-radius: .5em;
+
+        
 
         transform-origin: left center;
         transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;

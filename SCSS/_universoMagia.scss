@@ -3,18 +3,12 @@
     @import '../SCSS/componentes/navbar';
 
     background-image: url("/Multimedia/bg-magia.webp");
-    background-repeat: no-repeat;
     background-size: cover;
-
+    background-repeat: no-repeat;
+    position: relative;
     min-height: 100vh;
-
-    overflow-x: hidden;
-    overflow-y: hidden;
     
-   
     section{
-
-        height: 100%;
 
         .titulo-propuesta{
             font-family: 'Aladin';
@@ -35,11 +29,11 @@
         }
     
         .texto-propuesta{
-            position: relative;
-            top:5rem;
-            left: 40rem;
+            position: absolute;
+            top:20%;
+            right: 3%;
             height: fit-content;
-
+  
             p{
                 width: 80%;
                 font-family: 'Poppins';
@@ -62,9 +56,9 @@
     }
 
     .volver{
-        position: relative;
-        top: 20rem;
-        left: 73rem;
+        position: absolute;
+        top: 92.5%;
+        left: 80%;
         z-index: 3;
 
         border: 1px solid #F3EFEF;

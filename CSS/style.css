@@ -1,5 +1,4 @@
 #home {
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,11 +10,34 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url("/Multimedia/bg-home.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 #home .intro {
+  min-height: 100vh;
+  /*Mobile*/
   -webkit-animation: desapareceIntro 0.1s linear 5s forwards;
           animation: desapareceIntro 0.1s linear 5s forwards;
+}
+
+@media only screen and (max-width: 768px) {
+  #home .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @-webkit-keyframes desapareceIntro {
@@ -31,14 +53,16 @@
 }
 
 #home .intro .logo {
-  width: 25rem;
-  position: relative;
-  top: 10rem;
-  left: 5rem;
+  width: 30%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  /*Mobile*/
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   #home .intro .logo {
+    top: 15%;
     width: 10rem;
   }
 }
@@ -48,8 +72,18 @@
   width: 40%;
   left: 45%;
   top: 20%;
+  /*Mobile*/
   -webkit-animation: caidaLibro 3s ease forwards;
           animation: caidaLibro 3s ease forwards;
+}
+
+@media only screen and (max-width: 768px) {
+  #home .intro .libro {
+    position: relative;
+    width: 280px;
+    top: 0;
+    left: 0;
+  }
 }
 
 @-webkit-keyframes caidaLibro {
@@ -103,9 +137,10 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: absolute;
   top: 60%;
-  left: 15%;
+  left: 7.5%;
   -webkit-animation: barridoTexto 4s ease-in-out forwards;
           animation: barridoTexto 4s ease-in-out forwards;
+  /*Mobile*/
 }
 
 @-webkit-keyframes barridoTexto {
@@ -132,9 +167,10 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   #home .intro h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    top: 72%;
   }
 }
 
@@ -146,13 +182,22 @@
   border-radius: 80%/25px 25px 0 0;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
+  /*Mobile*/
   position: relative;
   bottom: 1rem;
   left: 8rem;
 }
 
+@media only screen and (max-width: 768px) {
+  #home .intro h1 hr {
+    width: 95px;
+    height: 15px;
+  }
+}
+
 #home .contenedor {
   width: 100%;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,8 +209,7 @@
           align-items: center;
   -webkit-perspective: 1200px;
           perspective: 1200px;
-  position: relative;
-  bottom: 90px;
+  position: absolute;
   -webkit-animation: apareceLibro 2s linear forwards;
           animation: apareceLibro 2s linear forwards;
   -webkit-animation-delay: 5s;
@@ -192,10 +236,31 @@
   height: 500px;
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
+  /*Mobile*/
   -webkit-animation: grow 2s ease forwards;
           animation: grow 2s ease forwards;
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
+}
+
+@media only screen and (max-width: 768px) {
+  #home .contenedor .book {
+    width: 100%;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @-webkit-keyframes grow {
@@ -223,6 +288,7 @@
   background: transparent;
   border-bottom-right-radius: .5em;
   border-top-right-radius: .5em;
+  /*Mobile*/
   -webkit-transform: translate(-35px, -20px);
           transform: translate(-35px, -20px);
   -webkit-transform-style: preserve-3d;
@@ -237,6 +303,14 @@
           animation: abrirFront 1s linear forwards;
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
+}
+
+@media only screen and (max-width: 768px) {
+  #home .contenedor .book .front {
+    position: relative;
+    width: 195px;
+    height: 265px;
+  }
 }
 
 @-webkit-keyframes abrirFront {
@@ -266,6 +340,7 @@
   background: #B4A99A;
   border-bottom-right-radius: .5em;
   border-top-right-radius: .5em;
+  /*Mobile*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform-origin: left center;
@@ -278,6 +353,12 @@
           animation: abrirPage1 1s linear forwards;
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
+}
+
+@media only screen and (max-width: 768px) {
+  #home .contenedor .book .page1 {
+    width: 175px;
+  }
 }
 
 @-webkit-keyframes abrirPage1 {
@@ -1372,11 +1453,10 @@
 
 #universoAventura {
   background-image: url("/Multimedia/bg-aventura.webp");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #universoAventura nav {
@@ -1404,10 +1484,6 @@
   font-weight: 600;
 }
 
-#universoAventura section {
-  height: 100%;
-}
-
 #universoAventura section .titulo-propuesta {
   font-family: 'Aladin';
   font-weight: 400;
@@ -1429,9 +1505,10 @@
 }
 
 #universoAventura section .contenedor-buho {
-  position: relative;
-  top: 0rem;
-  left: 5rem;
+  position: absolute;
+  width: 10%;
+  top: 10%;
+  left: 30%;
   z-index: 1;
   -webkit-animation: rotateAstro 5s linear infinite;
           animation: rotateAstro 5s linear infinite;
@@ -1476,7 +1553,7 @@
 }
 
 #universoAventura section .contenedor-buho .buho {
-  width: 10rem;
+  width: 100%;
   -webkit-animation: moveAstro 5s linear infinite;
           animation: moveAstro 5s linear infinite;
 }
@@ -1520,9 +1597,9 @@
 }
 
 #universoAventura section .texto-propuesta {
-  position: relative;
-  top: 5rem;
-  left: 20.7rem;
+  position: absolute;
+  top: 20%;
+  right: 3%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1549,9 +1626,9 @@
 }
 
 #universoAventura .volver {
-  position: relative;
-  top: 20rem;
-  left: 73rem;
+  position: absolute;
+  top: 92.5%;
+  left: 80%;
   z-index: 3;
   border: 1px solid #F3EFEF;
   border-radius: 20px;
@@ -1581,10 +1658,9 @@
   background-image: url("/Multimedia/bg-espacio.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -1px;
+  position: relative;
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  background-position: -1px;
 }
 
 #universoEspacio nav {
@@ -1612,10 +1688,6 @@
   font-weight: 600;
 }
 
-#universoEspacio section {
-  height: 100%;
-}
-
 #universoEspacio section .titulo-propuesta {
   font-family: 'Aladin';
   font-weight: 400;
@@ -1637,8 +1709,10 @@
 }
 
 #universoEspacio section .contenedor-astronauta {
-  position: relative;
-  top: 20rem;
+  position: absolute;
+  width: 15%;
+  top: 40%;
+  left: 30%;
   z-index: 1;
   -webkit-animation: rotateAstro 5s linear infinite;
           animation: rotateAstro 5s linear infinite;
@@ -1664,7 +1738,7 @@
 }
 
 #universoEspacio section .contenedor-astronauta .astronauta {
-  width: 15rem;
+  width: 100%;
   -webkit-animation: moveAstro 5s linear infinite;
           animation: moveAstro 5s linear infinite;
 }
@@ -1689,9 +1763,9 @@
 }
 
 #universoEspacio section .texto-propuesta {
-  position: relative;
-  top: 13rem;
-  left: 20rem;
+  position: absolute;
+  top: 40%;
+  right: 3%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1718,9 +1792,9 @@
 }
 
 #universoEspacio .volver {
-  position: relative;
-  top: 20rem;
-  left: 73rem;
+  position: absolute;
+  top: 92.5%;
+  left: 80%;
   z-index: 3;
   border: 1px solid #F3EFEF;
   border-radius: 20px;
@@ -1751,9 +1825,9 @@
   background-image: url("/Multimedia/bg-piratas.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   min-height: 100vh;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #universoIslaPirata nav {
@@ -1781,10 +1855,6 @@
   font-weight: 600;
 }
 
-#universoIslaPirata section {
-  height: 100%;
-}
-
 #universoIslaPirata section .titulo-propuesta {
   font-family: 'Aladin';
   font-weight: 400;
@@ -1799,17 +1869,17 @@
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  position: relative;
-  top: 8rem;
+  position: absolute;
+  top: 15%;
   left: 4rem;
   z-index: 2;
 }
 
 #universoIslaPirata section .contenedor-barco {
-  position: relative;
-  top: 1.1rem;
-  left: 72rem;
-  bottom: 0.5rem;
+  position: absolute;
+  width: 45%;
+  top: 25%;
+  left: 100%;
   z-index: 1;
   -webkit-animation: moveBoat 4s linear forwards;
           animation: moveBoat 4s linear forwards;
@@ -1821,24 +1891,24 @@
             transform: translate(0rem);
   }
   20% {
-    -webkit-transform: translate(-15rem);
-            transform: translate(-15rem);
+    -webkit-transform: translate(-35%);
+            transform: translate(-35%);
   }
   40% {
-    -webkit-transform: translate(-30rem);
-            transform: translate(-30rem);
+    -webkit-transform: translate(-70%);
+            transform: translate(-70%);
   }
   60% {
-    -webkit-transform: translate(-45rem);
-            transform: translate(-45rem);
+    -webkit-transform: translate(-105%);
+            transform: translate(-105%);
   }
   80% {
-    -webkit-transform: translate(-60rem);
-            transform: translate(-60rem);
+    -webkit-transform: translate(-140%);
+            transform: translate(-140%);
   }
   100% {
-    -webkit-transform: translate(-75rem);
-            transform: translate(-75rem);
+    -webkit-transform: translate(-175%);
+            transform: translate(-175%);
   }
 }
 
@@ -1848,29 +1918,29 @@
             transform: translate(0rem);
   }
   20% {
-    -webkit-transform: translate(-15rem);
-            transform: translate(-15rem);
+    -webkit-transform: translate(-35%);
+            transform: translate(-35%);
   }
   40% {
-    -webkit-transform: translate(-30rem);
-            transform: translate(-30rem);
+    -webkit-transform: translate(-70%);
+            transform: translate(-70%);
   }
   60% {
-    -webkit-transform: translate(-45rem);
-            transform: translate(-45rem);
+    -webkit-transform: translate(-105%);
+            transform: translate(-105%);
   }
   80% {
-    -webkit-transform: translate(-60rem);
-            transform: translate(-60rem);
+    -webkit-transform: translate(-140%);
+            transform: translate(-140%);
   }
   100% {
-    -webkit-transform: translate(-75rem);
-            transform: translate(-75rem);
+    -webkit-transform: translate(-175%);
+            transform: translate(-175%);
   }
 }
 
 #universoIslaPirata section .contenedor-barco .barco {
-  width: 50rem;
+  width: 100%;
   -webkit-animation: rotateBoat 4s linear infinite;
           animation: rotateBoat 4s linear infinite;
 }
@@ -1922,9 +1992,9 @@
 }
 
 #universoIslaPirata section .texto-propuesta {
-  position: relative;
-  top: 5rem;
-  right: 20rem;
+  position: absolute;
+  top: 20%;
+  right: 1%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1950,17 +2020,18 @@
 }
 
 #universoIslaPirata section .piratas-ola {
-  height: 130px;
-  position: relative;
-  top: 38.2rem;
+  height: 25%;
+  position: absolute;
+  top: 75%;
+  left: 0%;
   right: 108.2rem;
   z-index: 3;
 }
 
 #universoIslaPirata .volver {
-  position: relative;
-  bottom: 4rem;
-  left: 73rem;
+  position: absolute;
+  top: 92.5%;
+  left: 80%;
   z-index: 3;
   border: 1px solid #F3EFEF;
   border-radius: 20px;
@@ -1991,9 +2062,9 @@
   background-image: url("/Multimedia/bg-liga.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   min-height: 100vh;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #universoLigaHeroica nav {
@@ -2021,10 +2092,6 @@
   font-weight: 600;
 }
 
-#universoLigaHeroica section {
-  height: 100%;
-}
-
 #universoLigaHeroica section .titulo-propuesta {
   font-family: 'Aladin';
   font-weight: 400;
@@ -2046,53 +2113,56 @@
 }
 
 #universoLigaHeroica section .contenedor-heroe {
-  position: relative;
-  top: 8rem;
-  left: 35rem;
+  position: absolute;
+  top: 450px;
+  left: 30%;
+  width: 30%;
   z-index: 1;
   -webkit-animation: volarHeroe 1s linear forwards;
           animation: volarHeroe 1s linear forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   opacity: 0;
 }
 
 @-webkit-keyframes volarHeroe {
   0% {
-    -webkit-transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
-            transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
+    -webkit-transform: translate3d(0px, 0px, 0px) rotate(-50deg);
+            transform: translate3d(0px, 0px, 0px) rotate(-50deg);
     opacity: 1;
   }
   50% {
-    -webkit-transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
-            transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
+    -webkit-transform: translate3d(-30%, -200px, 0) rotate(-25deg);
+            transform: translate3d(-30%, -200px, 0) rotate(-25deg);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translate3d(-100px, -150px, 0px) rotate(0deg);
-            transform: translate3d(-100px, -150px, 0px) rotate(0deg);
+    -webkit-transform: translate3d(-50%, -400px, 0) rotate(0deg);
+            transform: translate3d(-50%, -400px, 0) rotate(0deg);
     opacity: 1;
   }
 }
 
 @keyframes volarHeroe {
   0% {
-    -webkit-transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
-            transform: translate3d(2000px, 2000px, 0px) rotate(-25deg);
+    -webkit-transform: translate3d(0px, 0px, 0px) rotate(-50deg);
+            transform: translate3d(0px, 0px, 0px) rotate(-50deg);
     opacity: 1;
   }
   50% {
-    -webkit-transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
-            transform: translate3d(-25px, -50px, 0px) rotate(-12.5deg);
+    -webkit-transform: translate3d(-30%, -200px, 0) rotate(-25deg);
+            transform: translate3d(-30%, -200px, 0) rotate(-25deg);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translate3d(-100px, -150px, 0px) rotate(0deg);
-            transform: translate3d(-100px, -150px, 0px) rotate(0deg);
+    -webkit-transform: translate3d(-50%, -400px, 0) rotate(0deg);
+            transform: translate3d(-50%, -400px, 0) rotate(0deg);
     opacity: 1;
   }
 }
 
 #universoLigaHeroica section .contenedor-heroe .heroe {
-  width: 15rem;
+  width: 50%;
   -webkit-animation: rotarHeroe 2s linear infinite;
           animation: rotarHeroe 2s linear infinite;
   -webkit-animation-delay: 2s;
@@ -2138,13 +2208,15 @@
 }
 
 #universoLigaHeroica section .contenedor-heroina {
-  position: relative;
-  top: 28rem;
+  position: absolute;
+  width: 18%;
+  top: 63%;
+  left: 20%;
   z-index: 1;
   -webkit-animation: barridoHeroina 1s linear forwards;
           animation: barridoHeroina 1s linear forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   opacity: 0;
 }
 
@@ -2185,11 +2257,11 @@
 }
 
 #universoLigaHeroica section .contenedor-heroina .heroina {
-  width: 12rem;
+  width: 100%;
   -webkit-animation: transporteHeroina 3s ease infinite;
           animation: transporteHeroina 3s ease infinite;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @-webkit-keyframes transporteHeroina {
@@ -2198,8 +2270,8 @@
             transform: translate3d(0, 0, 0);
   }
   50% {
-    -webkit-transform: translate3d(-150px, 0, 0);
-            transform: translate3d(-150px, 0, 0);
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
   }
 }
 
@@ -2209,15 +2281,15 @@
             transform: translate3d(0, 0, 0);
   }
   50% {
-    -webkit-transform: translate3d(-150px, 0, 0);
-            transform: translate3d(-150px, 0, 0);
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
   }
 }
 
 #universoLigaHeroica section .texto-propuesta {
-  position: relative;
-  top: 15rem;
-  left: 10.1rem;
+  position: absolute;
+  top: 40%;
+  right: 3%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -2243,9 +2315,9 @@
 }
 
 #universoLigaHeroica .volver {
-  position: relative;
-  top: 20rem;
-  left: 73rem;
+  position: absolute;
+  top: 92.5%;
+  left: 80%;
   z-index: 3;
   border: 1px solid #F3EFEF;
   border-radius: 20px;
@@ -2274,11 +2346,10 @@
 
 #universoMagia {
   background-image: url("/Multimedia/bg-magia.webp");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #universoMagia nav {
@@ -2306,10 +2377,6 @@
   font-weight: 600;
 }
 
-#universoMagia section {
-  height: 100%;
-}
-
 #universoMagia section .titulo-propuesta {
   font-family: 'Aladin';
   font-weight: 400;
@@ -2331,9 +2398,9 @@
 }
 
 #universoMagia section .texto-propuesta {
-  position: relative;
-  top: 5rem;
-  left: 40rem;
+  position: absolute;
+  top: 20%;
+  right: 3%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -2360,9 +2427,9 @@
 }
 
 #universoMagia .volver {
-  position: relative;
-  top: 20rem;
-  left: 73rem;
+  position: absolute;
+  top: 92.5%;
+  left: 80%;
   z-index: 3;
   border: 1px solid #F3EFEF;
   border-radius: 20px;

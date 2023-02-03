@@ -3,17 +3,12 @@
     @import '../SCSS/componentes/navbar';
 
     background-image: url("/Multimedia/bg-aventura.webp");
-    background-repeat: no-repeat;
     background-size: cover;
-
+    background-repeat: no-repeat;
+    position: relative;
     min-height: 100vh;
 
-    overflow-x: hidden;
-    overflow-y: hidden;   
-
     section{
-
-        height: 100%;
 
         .titulo-propuesta{
             font-family: 'Aladin';
@@ -34,9 +29,10 @@
         }
 
         .contenedor-buho{
-            position: relative;
-            top: 0rem;
-            left: 5rem;
+            position: absolute;
+            width: 10%;
+            top: 10%;
+            left: 30%;
             z-index: 1;
             animation: rotateAstro 5s linear infinite;
     
@@ -59,7 +55,7 @@
             }
     
             .buho{
-                width: 10rem;
+                width: 100%;
                 animation: moveAstro 5s linear infinite;
             }
         
@@ -83,9 +79,9 @@
         }  
     
         .texto-propuesta{
-            position: relative;
-            top:5rem;
-            left: 20.7rem;
+            position: absolute;
+            top:20%;
+            right: 3%;
             height: fit-content;
 
             p{
@@ -110,9 +106,9 @@
     }
 
     .volver{
-        position: relative;
-        top: 20rem;
-        left: 73rem;
+        position: absolute;
+        top: 92.5%;
+        left: 80%;
         z-index: 3;
 
         border: 1px solid #F3EFEF;

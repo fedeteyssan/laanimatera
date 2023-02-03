@@ -5,15 +5,12 @@
     background-image: url("/Multimedia/bg-liga.webp");
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: relative;
     min-height: 100vh;
 
     overflow-x: hidden;
-    overflow-y: hidden;
     
     section{
-
-        height: 100%;
 
         .titulo-propuesta{
             font-family: 'Aladin';
@@ -34,32 +31,34 @@
         }
     
         .contenedor-heroe{
-            position: relative;
-            top: 8rem;
-            left: 35rem;
+            position: absolute;
+            top: 450px;
+            left: 30%;
+            width: 30%;
             z-index: 1;
             animation:  volarHeroe 1s linear forwards;
-            animation-delay: 2s;
+            animation-delay: 2.5s;
             opacity: 0;
     
             @keyframes volarHeroe {
                 0%{
-                    transform: translate3d(2000px,2000px,0px) rotate(-25deg) ;
+                    transform: translate3d(0px,0px,0px) rotate(-50deg) ;
+                    opacity: 1;
+                }
+
+                50%{
+                    transform: translate3d(-30%,-200px,0) rotate(-25deg) ;
                     opacity: 1;
                 }
     
-                50%{
-                    transform: translate3d(-25px,-50px,0px) rotate(-12.5deg) ;
-                }
-               
                 100%{
-                    transform: translate3d(-100px,-150px,0px) rotate(0deg) ;
+                    transform: translate3d(-50%,-400px,0) rotate(0deg) ;
                     opacity: 1;
-                }
+                }   
             }
     
             .heroe{
-                width: 15rem;
+                width: 50%;
                 animation: rotarHeroe 2s linear infinite;
                 animation-delay: 2s;
     
@@ -85,11 +84,13 @@
         }  
 
         .contenedor-heroina{
-            position: relative;
-            top: 28rem;
+            position: absolute;
+            width: 18%;
+            top: 63%;
+            left: 20%;
             z-index: 1;
             animation: barridoHeroina 1s linear forwards;
-            animation-delay: 2s;
+            animation-delay: 1s;
             opacity: 0;
     
             @keyframes barridoHeroina {
@@ -110,9 +111,9 @@
             }
     
             .heroina{
-                width: 12rem;
+                width: 100%;
                 animation: transporteHeroina 3s ease infinite;
-                animation-delay: 3s;
+                animation-delay: 2s;
             }
         
             @keyframes transporteHeroina {
@@ -121,15 +122,15 @@
                 }
 
                 50%{
-                    transform: translate3d(-150px,0,0)
+                    transform: translate3d(-250px,0,0)
                 }
             }
         }  
     
         .texto-propuesta{
-            position: relative;
-            top:15rem;
-            left: 10.1rem;
+            position: absolute;
+            top:40%;
+            right: 3%;
             height: fit-content;
 
             p{
@@ -153,9 +154,9 @@
     }
 
     .volver{
-        position: relative;
-        top: 20rem;
-        left: 73rem;
+        position: absolute;
+        top: 92.5%;
+        left: 80%;
         z-index: 3;
 
         border: 1px solid #F3EFEF;

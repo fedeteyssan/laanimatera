@@ -5,16 +5,14 @@
     background-image: url("/Multimedia/bg-piratas.webp");
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: relative;
     min-height: 100vh;
 
     overflow-x: hidden;
-    overflow-y: hidden;
     
    
     section{
 
-        height: 100%;
 
         .titulo-propuesta{
             font-family: 'Aladin';
@@ -28,17 +26,17 @@
             height: fit-content;
             min-width: fit-content; 
 
-            position: relative;
-            top: 8rem;
+            position: absolute;
+            top: 15%;
             left: 4rem;
             z-index: 2;     
         }
     
         .contenedor-barco{
-            position: relative;
-            top:1.1rem;
-            left: 72rem;
-            bottom: 0.5rem;
+            position: absolute;
+            width: 45%;
+            top:25%;
+            left: 100%;
             z-index: 1;
             animation: moveBoat 4s linear forwards;
 
@@ -48,28 +46,28 @@
                 }
              
                 20%{
-                    transform: translate(-15rem) ;
+                    transform: translate(-35%) ;
                 }
              
                 40%{
-                    transform: translate(-30rem) ;
+                    transform: translate(-70%) ;
                 }
              
                 60%{
-                    transform: translate(-45rem);
+                    transform: translate(-105%);
                 }
              
                 80%{
-                    transform: translate(-60rem);
+                    transform: translate(-140%);
                 }
              
                 100%{
-                    transform: translate(-75rem);
+                    transform: translate(-175%);
                 }
             }
     
             .barco{
-                width: 50rem;
+                width: 100%;
                 animation: rotateBoat 4s linear infinite;
     
                 @keyframes rotateBoat {
@@ -99,9 +97,9 @@
         }  
     
         .texto-propuesta{
-            position: relative;
-            top:5rem;
-            right: 20rem;
+            position: absolute;
+            top:20%;
+            right: 1%;
             height: fit-content;
 
             p{
@@ -124,18 +122,19 @@
         }
 
         .piratas-ola{
-            height: 130px;
-            position: relative;
-            top: 38.2rem;
+            height: 25%;
+            position: absolute;
+            top: 75%;
+            left: 0%;
             right: 108.2rem;
             z-index: 3;
         }
     }
 
     .volver{
-        position: relative;
-        bottom: 4rem;
-        left: 73rem;
+        position: absolute;
+        top: 92.5%;
+        left: 80%;
         z-index: 3;
 
         border: 1px solid #F3EFEF;
