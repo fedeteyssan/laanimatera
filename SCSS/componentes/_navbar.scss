@@ -12,6 +12,15 @@ nav{
     }
 
     ul{
+
+        /*Mobile*/
+        @media only screen and (max-width:768px){
+            margin-bottom: 0 !important;
+            margin-left: 0 !important;
+            margin-right: -0.5rem;
+            float: right;
+        }
+
         li{
             a{
                 font-family: 'Poppins';
@@ -20,6 +29,13 @@ nav{
                 color: #F3EFEF;
                 margin: 0 1rem;
                 padding: 0.25rem 1rem;
+
+                /*Mobile*/
+                @media only screen and (max-width:768px){
+                    font-size: 0.75rem;
+                    padding: 0.25rem 0rem;
+                    text-align: center;
+                }
             }
 
             .active{
