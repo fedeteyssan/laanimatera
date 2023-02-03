@@ -2560,7 +2560,6 @@
   font-weight: 400;
   color: #7846A6;
   text-transform: uppercase;
-  margin: 2.25rem 0 0 3rem;
 }
 
 #contacto form .form-column-1 {
@@ -2696,6 +2695,24 @@
   width: 90%;
   background: rgba(247, 236, 236, 0.75);
   border-radius: 15px;
+}
+
+#contacto-mobile form button {
+  width: 8.75rem;
+  height: 2.5rem;
+  margin-bottom: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #7846A6;
+  -webkit-box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 #contacto-mobile .redes-sociales {

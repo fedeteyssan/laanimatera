@@ -44,7 +44,6 @@
             font-weight: 400;
             color: #7846A6;
             text-transform: uppercase;
-            margin: 2.25rem 0 0 3rem;
         }
 
         .form-column-1{
@@ -151,6 +150,24 @@
             width: 90%;
             background: rgba(247, 236, 236, 0.75);
             border-radius: 15px;
+        }
+
+        button{
+            width: 8.75rem;
+            height: 2.5rem;
+            
+            margin-bottom: 2rem;
+            align-self: center;
+             
+            background: #7846A6;
+            box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 22px;
+
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+            color: #FFFFFF;
         }
     }
 
