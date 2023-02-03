@@ -2720,7 +2720,7 @@
 }
 
 #contacto-mobile .redes-sociales img {
-  width: 2rem;
+  width: 3rem;
   padding-top: 0.5rem;
   -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
           filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
@@ -2733,6 +2733,7 @@
   position: relative;
   background-attachment: scroll;
   min-height: 100vh;
+  /*Desktop*/
 }
 
 #confirmacion nav {
@@ -2764,17 +2765,10 @@
   font-weight: 600;
 }
 
-#confirmacion .redes-sociales {
-  position: absolute;
-  left: 93%;
-  bottom: 10%;
-}
-
-#confirmacion .redes-sociales img {
-  width: 3rem;
-  padding-top: 0.5rem;
-  -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
-          filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+@media only screen and (max-width: 768px) {
+  #confirmacion {
+    background-image: url("../Multimedia/bg-mobile-contacto.png");
+  }
 }
 
 #confirmacion .mensajeFinal {
@@ -2787,25 +2781,83 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
-  height: 20%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem 2rem 1rem 2rem;
   position: absolute;
-  left: 15.69%;
   top: 39.84%;
   background: rgba(253, 249, 249, 0.75);
   border: 1px solid rgba(44, 38, 108, 0.33);
   -webkit-box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
           box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
   border-radius: 57px;
+  /*mobile*/
+}
+
+@media only screen and (max-width: 768px) {
+  #confirmacion .mensajeFinal {
+    padding: 0.5rem 1rem 0 1rem;
+  }
 }
 
 #confirmacion .mensajeFinal p {
+  width: 90%;
   font-family: 'Julius Sans One';
   font-weight: 400;
   font-size: 1.75rem;
   line-height: 31px;
   text-align: center;
   color: #613689;
+  /*mobile*/
+}
+
+@media only screen and (max-width: 768px) {
+  #confirmacion .mensajeFinal p {
+    font-size: 1rem;
+  }
+}
+
+#confirmacion .redes-sociales {
+  position: absolute;
+  left: 93%;
+  bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*mobile*/
+}
+
+@media only screen and (max-width: 768px) {
+  #confirmacion .redes-sociales {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 50%;
+    left: 25%;
+    top: 500px;
+  }
+}
+
+#confirmacion .redes-sociales img {
+  width: 3rem;
+  padding-top: 0.5rem;
+  -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+          filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
 }
 
 #mobile {
