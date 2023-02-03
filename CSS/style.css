@@ -629,6 +629,10 @@
   margin-left: 2rem;
 }
 
+#quienesSomos nav .navbar-toggler {
+  background-color: white !important;
+}
+
 #quienesSomos nav ul li a {
   font-family: 'Poppins';
   font-weight: 500;
@@ -1354,6 +1358,10 @@
   margin-left: 2rem;
 }
 
+#propuestas nav .navbar-toggler {
+  background-color: white !important;
+}
+
 #propuestas nav ul li a {
   font-family: 'Poppins';
   font-weight: 500;
@@ -1456,7 +1464,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  min-height: 100vh;
+  height: 822px;
 }
 
 #universoAventura nav {
@@ -1467,6 +1475,10 @@
 #universoAventura nav .logo-nav {
   width: 100px;
   margin-left: 2rem;
+}
+
+#universoAventura nav .navbar-toggler {
+  background-color: white !important;
 }
 
 #universoAventura nav ul li a {
@@ -1659,7 +1671,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 100vh;
+  height: 822px;
   background-position: -1px;
 }
 
@@ -1671,6 +1683,10 @@
 #universoEspacio nav .logo-nav {
   width: 100px;
   margin-left: 2rem;
+}
+
+#universoEspacio nav .navbar-toggler {
+  background-color: white !important;
 }
 
 #universoEspacio nav ul li a {
@@ -1826,7 +1842,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 100vh;
+  height: 822px;
   overflow-x: hidden;
 }
 
@@ -1838,6 +1854,10 @@
 #universoIslaPirata nav .logo-nav {
   width: 100px;
   margin-left: 2rem;
+}
+
+#universoIslaPirata nav .navbar-toggler {
+  background-color: white !important;
 }
 
 #universoIslaPirata nav ul li a {
@@ -1877,7 +1897,7 @@
 
 #universoIslaPirata section .contenedor-barco {
   position: absolute;
-  width: 45%;
+  width: 40.5rem;
   top: 25%;
   left: 100%;
   z-index: 1;
@@ -1891,24 +1911,24 @@
             transform: translate(0rem);
   }
   20% {
-    -webkit-transform: translate(-35%);
-            transform: translate(-35%);
+    -webkit-transform: translate(-30%);
+            transform: translate(-30%);
   }
   40% {
-    -webkit-transform: translate(-70%);
-            transform: translate(-70%);
+    -webkit-transform: translate(-60%);
+            transform: translate(-60%);
   }
   60% {
-    -webkit-transform: translate(-105%);
-            transform: translate(-105%);
+    -webkit-transform: translate(-90%);
+            transform: translate(-90%);
   }
   80% {
-    -webkit-transform: translate(-140%);
-            transform: translate(-140%);
+    -webkit-transform: translate(-120%);
+            transform: translate(-120%);
   }
   100% {
-    -webkit-transform: translate(-175%);
-            transform: translate(-175%);
+    -webkit-transform: translate(-150%);
+            transform: translate(-150%);
   }
 }
 
@@ -1918,24 +1938,24 @@
             transform: translate(0rem);
   }
   20% {
-    -webkit-transform: translate(-35%);
-            transform: translate(-35%);
+    -webkit-transform: translate(-30%);
+            transform: translate(-30%);
   }
   40% {
-    -webkit-transform: translate(-70%);
-            transform: translate(-70%);
+    -webkit-transform: translate(-60%);
+            transform: translate(-60%);
   }
   60% {
-    -webkit-transform: translate(-105%);
-            transform: translate(-105%);
+    -webkit-transform: translate(-90%);
+            transform: translate(-90%);
   }
   80% {
-    -webkit-transform: translate(-140%);
-            transform: translate(-140%);
+    -webkit-transform: translate(-120%);
+            transform: translate(-120%);
   }
   100% {
-    -webkit-transform: translate(-175%);
-            transform: translate(-175%);
+    -webkit-transform: translate(-150%);
+            transform: translate(-150%);
   }
 }
 
@@ -2024,7 +2044,6 @@
   position: absolute;
   top: 75%;
   left: 0%;
-  right: 108.2rem;
   z-index: 3;
 }
 
@@ -2063,7 +2082,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 100vh;
+  height: 822px;
   overflow-x: hidden;
 }
 
@@ -2075,6 +2094,10 @@
 #universoLigaHeroica nav .logo-nav {
   width: 100px;
   margin-left: 2rem;
+}
+
+#universoLigaHeroica nav .navbar-toggler {
+  background-color: white !important;
 }
 
 #universoLigaHeroica nav ul li a {
@@ -2349,7 +2372,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  min-height: 100vh;
+  height: 822px;
 }
 
 #universoMagia nav {
@@ -2360,6 +2383,10 @@
 #universoMagia nav .logo-nav {
   width: 100px;
   margin-left: 2rem;
+}
+
+#universoMagia nav .navbar-toggler {
+  background-color: white !important;
 }
 
 #universoMagia nav ul li a {
@@ -2457,6 +2484,7 @@
 }
 
 #contacto {
+  /*Desktop*/
   background-image: url("../Multimedia/bg-contacto.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -2475,6 +2503,10 @@
   margin-left: 2rem;
 }
 
+#contacto nav .navbar-toggler {
+  background-color: white !important;
+}
+
 #contacto nav ul li a {
   font-family: 'Poppins';
   font-weight: 500;
@@ -2488,6 +2520,14 @@
   border: 1px solid #F9F3F3;
   border-radius: 25px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  #contacto {
+    width: 100%;
+    height: 250px;
+    display: none;
+  }
 }
 
 #contacto .redes-sociales {
@@ -2570,6 +2610,105 @@
   color: #FFFFFF;
 }
 
+#contacto-mobile {
+  /*Mobile*/
+  background-image: url("../Multimedia/bg-mobile-contacto.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+#contacto-mobile nav {
+  z-index: 10;
+  padding-top: 2rem;
+}
+
+#contacto-mobile nav .logo-nav {
+  width: 100px;
+  margin-left: 2rem;
+}
+
+#contacto-mobile nav .navbar-toggler {
+  background-color: white !important;
+}
+
+#contacto-mobile nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#contacto-mobile nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 769px) {
+  #contacto-mobile {
+    width: 100%;
+    height: 250px;
+    display: none;
+  }
+}
+
+#contacto-mobile form {
+  width: 90%;
+  height: 100%;
+  margin: 1rem 0;
+  background: rgba(253, 249, 249, 0.75);
+  border: 1px solid rgba(44, 38, 108, 0.33);
+  -webkit-box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+#contacto-mobile form h3 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7846A6;
+  text-transform: uppercase;
+  margin: 2.25rem 0 0 1rem;
+}
+
+#contacto-mobile form label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#contacto-mobile form input {
+  width: 90%;
+  background: rgba(247, 236, 236, 0.75);
+  border-radius: 15px;
+}
+
+#contacto-mobile form textarea {
+  width: 90%;
+  background: rgba(247, 236, 236, 0.75);
+  border-radius: 15px;
+}
+
+#contacto-mobile .redes-sociales {
+  margin-bottom: 3rem;
+}
+
+#contacto-mobile .redes-sociales img {
+  width: 2rem;
+  padding-top: 0.5rem;
+  -webkit-filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+          filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
+}
+
 #confirmacion {
   background-image: url("../Multimedia/bg-contacto.webp");
   background-size: cover;
@@ -2587,6 +2726,10 @@
 #confirmacion nav .logo-nav {
   width: 100px;
   margin-left: 2rem;
+}
+
+#confirmacion nav .navbar-toggler {
+  background-color: white !important;
 }
 
 #confirmacion nav ul li a {
@@ -2646,6 +2789,44 @@
   line-height: 31px;
   text-align: center;
   color: #613689;
+}
+
+#mobile {
+  background-image: url("../Multimedia/bg-mobile-contacto.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+#mobile nav {
+  z-index: 10;
+  padding-top: 2rem;
+}
+
+#mobile nav .logo-nav {
+  width: 100px;
+  margin-left: 2rem;
+}
+
+#mobile nav .navbar-toggler {
+  background-color: white !important;
+}
+
+#mobile nav ul li a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F3EFEF;
+  margin: 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+#mobile nav ul li .active {
+  border: 1px solid #F9F3F3;
+  border-radius: 25px;
+  font-weight: 600;
 }
 
 * {

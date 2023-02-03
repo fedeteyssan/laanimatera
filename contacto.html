@@ -19,128 +19,240 @@
 
 </head>
 
-<body id="contacto">
+<body>
     
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg">
-        
-        <div class="container-fluid">
-            <!--Logo-->
-            <a class="navbar-brand" href="index.html"><img class="logo-nav" src="/Multimedia/logo-chico.png" loading="lazy" alt=""></a>
-            
-            <!--Hamburguer-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="quienesSomos.html">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="propuestas.html">Nuestras propuestas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contacto.html">Contactanos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="contacto">
 
-    <!--Redes sociales-->
-    <div class="redes-sociales d-flex flex-column justify-content-between">
-        <a target="blank" href="https://api.whatsapp.com/send/?phone=5491130354594&text&type=phone_number&app_absent=0"><img src="Multimedia/logo-whatsapp.png" loading="lazy" alt="Whatsapp"></a>
-        <a target="blank" href="https://www.instagram.com/la_animatera"><img src="Multimedia/logo-IG.png" loading="lazy" alt="Instagram"></a>
-        <a target="blank" href=" https://www.facebook.com/laanimatera"><img src="Multimedia/logo-FB.png" loading="lazy" alt="Facebook"></a>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md">
+            
+            <div class="container-fluid">
+                <!--Logo-->
+                <a class="navbar-brand" href="index.html"><img class="logo-nav" src="/Multimedia/logo-chico.png" loading="lazy" alt=""></a>
+                
+                <!--Hamburguer-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienesSomos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="propuestas.html">Nuestras propuestas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Redes sociales-->
+        <div class="redes-sociales d-flex flex-column justify-content-between">
+            <a target="blank" href="https://api.whatsapp.com/send/?phone=5491130354594&text&type=phone_number&app_absent=0"><img src="Multimedia/logo-whatsapp.png" loading="lazy" alt="Whatsapp"></a>
+            <a target="blank" href="https://www.instagram.com/la_animatera"><img src="Multimedia/logo-IG.png" loading="lazy" alt="Instagram"></a>
+            <a target="blank" href=" https://www.facebook.com/laanimatera"><img src="Multimedia/logo-FB.png" loading="lazy" alt="Facebook"></a>
+        </div>
+
+        <!--Formulario-->
+        <section class="form-container d-flex flex-column container-fluid w-100">
+            <form id="contact-form"class="d-flex flex-column">
+
+                <h3>
+                    Contactanos y entrá 
+                    <br>en nuestro fantástico mundo
+                </h3>
+
+                <div class="d-flex container-fluid w-100 justify-content-evenly">
+                    <div class="form-column-1 d-flex flex-column container-fluid w-50">
+
+                        <div class="d-flex">
+                            <div class="mb-3 w-50">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" aria-describedby="" required>
+                            </div>
+                    
+                            <div class="mb-3 ms-3 w-50">
+                                <label for="apelido" class="form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" aria-describedby="" required>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono:</label>
+                                <input type="number" class="form-control" id="telefono" aria-describedby="" required>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="" required >
+                            </div>
+                        </div>
+                
+                        <div>
+                            <div class="mb-3">
+                                <label for="evento" class="form-label">Tipo de evento:</label>
+                                <input type="text" class="form-control" id="evento" aria-describedby="" required>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <div class="mb-3">
+                                <label for="edad" class="form-label">Edad de l@s asistentes:</label>
+                                <input type="number" class="form-control" id="edad" aria-describedby="" required>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="form-column-2 container-fluid w-50">
+                
+                        <div>
+                            <div class="mb-3">
+                                <label for="lugar" class="form-label">Lugar del evento (Localidad):</label>
+                                <input type="text" class="form-control" id="lugar" aria-describedby="" required>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <div class="mb-3">
+                                <label for="asistentes" class="form-label">Cantidad de asistentes:</label>
+                                <input type="number" class="form-control" id="cantidad" aria-describedby="" required>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <div class="mb-3">
+                                <label for="consulta" class="form-label">Mensaje de consulta:</label>
+                                <textarea class="form-control" rows="7"id="mensaje" aria-describedby="" required></textarea>
+                            </div>
+                        </div>
+            
+                    </div>
+
+                </div>
+
+                <button type="submit" id="form-button" class="btn" >Enviar</button>
+
+            </form>
+        </section>
     </div>
 
-    <!--Formulario-->
-    <section class="form-container d-flex flex-column container-fluid w-100">
-        <form id="contact-form"class="d-flex flex-column">
-
-            <h3>
-                Contactanos y entrá 
-                <br>en nuestro fantástico mundo
-            </h3>
-
-            <div class="d-flex container-fluid w-100 justify-content-evenly">
-                <div class="form-column-1 d-flex flex-column container-fluid w-50">
-
-                    <div class="d-flex">
-                        <div class="mb-3 w-50">
-                            <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" aria-describedby="" required>
-                          </div>
-                  
-                          <div class="mb-3 ms-3 w-50">
-                              <label for="apelido" class="form-label">Apellido:</label>
-                              <input type="text" class="form-control" id="apellido" aria-describedby="" required>
-                          </div>
-                    </div>
+    <div id="contacto-mobile">
+    
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md">
             
-                    <div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono:</label>
-                            <input type="number" class="form-control" id="telefono" aria-describedby="" required>
-                          </div>
+            <div class="container-fluid">
+                <!--Logo-->
+                <a class="navbar-brand" href="index.html"><img class="logo-nav" src="/Multimedia/logo-chico.png" loading="lazy" alt=""></a>
+                
+                <!--Hamburguer-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienesSomos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="propuestas.html">Nuestras propuestas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!--Formulario-->
+        <section class="form-container d-flex flex-column container-fluid align-items-center w-100">
+            <form id="contact-form"class="d-flex flex-column">
+    
+                <h3>
+                    Contactanos y entrá 
+                    <br>en nuestro fantástico mundo
+                </h3>
+    
+                <div class="container-fluid d-flex flex-column justify-content-center w-100 ">
+    
+                    <div class="mt-2 mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" aria-describedby="" required>
                     </div>
-            
+    
+                    <div class="mb-3">
+                        <label for="apelido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" aria-describedby="" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="number" class="form-control" id="telefono" aria-describedby="" required>
+                    </div>
+    
                     <div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email:</label>
                             <input type="email" class="form-control" id="email" aria-describedby="" required >
-                          </div>
+                        </div>
                     </div>
             
                     <div>
                         <div class="mb-3">
                             <label for="evento" class="form-label">Tipo de evento:</label>
                             <input type="text" class="form-control" id="evento" aria-describedby="" required>
-                          </div>
+                        </div>
                     </div>
             
                     <div>
                         <div class="mb-3">
                             <label for="edad" class="form-label">Edad de l@s asistentes:</label>
                             <input type="number" class="form-control" id="edad" aria-describedby="" required>
-                          </div>
+                        </div>
                     </div>
-                </div>
-        
-                <div class="form-column-2 container-fluid w-50">
-            
+    
                     <div>
                         <div class="mb-3">
                             <label for="lugar" class="form-label">Lugar del evento (Localidad):</label>
                             <input type="text" class="form-control" id="lugar" aria-describedby="" required>
-                          </div>
+                        </div>
                     </div>
             
                     <div>
                         <div class="mb-3">
                             <label for="asistentes" class="form-label">Cantidad de asistentes:</label>
                             <input type="number" class="form-control" id="cantidad" aria-describedby="" required>
-                          </div>
+                        </div>
                     </div>
             
                     <div>
-                        <div class="mb-3">
+                        <div class="mb-4">
                             <label for="consulta" class="form-label">Mensaje de consulta:</label>
                             <textarea class="form-control" rows="7"id="mensaje" aria-describedby="" required></textarea>
                         </div>
                     </div>
-        
                 </div>
-
-            </div>
-
-            <button type="submit" id="form-button" class="btn" >Enviar</button>
-
-        </form>
-
-    </section>
+            </form>
+    
+            <!--Redes sociales-->
+            <div class="redes-sociales d-flex justify-content-evenly w-50">
+            <a target="blank" href="https://api.whatsapp.com/send/?phone=5491130354594&text&type=phone_number&app_absent=0"><img src="Multimedia/logo-whatsapp.png" loading="lazy" alt="Whatsapp"></a>
+            <a target="blank" href="https://www.instagram.com/la_animatera"><img src="Multimedia/logo-IG.png" loading="lazy" alt="Instagram"></a>
+            <a target="blank" href=" https://www.facebook.com/laanimatera"><img src="Multimedia/logo-FB.png" loading="lazy" alt="Facebook"></a>
+    
+        </section>
+    </div>
+    
 
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">

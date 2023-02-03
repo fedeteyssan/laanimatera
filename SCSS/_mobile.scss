@@ -1,0 +1,12 @@
+#mobile{
+
+    @import '../SCSS/componentes/navbar';
+    
+    background-image: url("../Multimedia/bg-mobile-contacto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment:fixed;
+    min-height: 100vh;
+    
+}
