@@ -3121,14 +3121,12 @@
           box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0px 57px 57px 0px;
   /*Mobile*/
-  /*Desktop*/
-  /*Mobile*/
 }
 
 @media only screen and (max-width: 768px) {
   #contacto form {
     width: 90%;
-    margin: 1rem 0;
+    margin: 1rem 0 0 1rem;
     border-radius: 15px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3153,15 +3151,102 @@
   }
 }
 
-#contacto form .form-column-1 {
+#contacto form .form-fields-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  /*Mobile*/
+}
+
+@media only screen and (max-width: 768px) {
+  #contacto form .form-fields-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#contacto form .form-fields-container .form-column-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
   margin: 1rem 1.5rem 0 3rem;
+  /*Mobile*/
 }
 
-#contacto form .form-column-2 {
+@media only screen and (max-width: 768px) {
+  #contacto form .form-fields-container .form-column-1 {
+    width: 100%;
+    margin: 1rem 1.5rem 0 1.5rem;
+  }
+}
+
+#contacto form .form-fields-container .form-column-1 .field-nombre-apellido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*Mobile*/
+}
+
+@media only screen and (max-width: 768px) {
+  #contacto form .form-fields-container .form-column-1 .field-nombre-apellido {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#contacto form .form-fields-container .form-column-1 .field-nombre-apellido .nombre {
+  width: 50%;
+  /*Mobile*/
+}
+
+@media only screen and (max-width: 768px) {
+  #contacto form .form-fields-container .form-column-1 .field-nombre-apellido .nombre {
+    width: 100%;
+  }
+}
+
+#contacto form .form-fields-container .form-column-1 .field-nombre-apellido .apellido {
+  margin-left: 1rem;
+  width: 50%;
+  /*Mobile*/
+}
+
+@media only screen and (max-width: 768px) {
+  #contacto form .form-fields-container .form-column-1 .field-nombre-apellido .apellido {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+#contacto form .form-fields-container .form-column-2 {
+  width: 50%;
   margin: 1rem 0 0 1.5rem;
+  /*Mobile*/
 }
 
-#contacto form label {
+@media only screen and (max-width: 768px) {
+  #contacto form .form-fields-container .form-column-2 {
+    width: 100%;
+    margin: 1rem 1.5rem 0 1.5rem;
+  }
+}
+
+#contacto form .form-fields-container label {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -3172,12 +3257,12 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #contacto form label {
+  #contacto form .form-fields-container label {
     font-size: 1rem;
   }
 }
 
-#contacto form input {
+#contacto form .form-fields-container input {
   width: 100%;
   height: 2.25rem;
   background: rgba(247, 236, 236, 0.75);
@@ -3186,19 +3271,19 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #contacto form input {
+  #contacto form .form-fields-container input {
     width: 90%;
   }
 }
 
-#contacto form textarea {
+#contacto form .form-fields-container textarea {
   background: rgba(247, 236, 236, 0.75);
   border-radius: 15px;
   /*Mobile*/
 }
 
 @media only screen and (max-width: 768px) {
-  #contacto form textarea {
+  #contacto form .form-fields-container textarea {
     width: 90%;
   }
 }
@@ -3226,18 +3311,6 @@
   #contacto form button {
     margin: 0 0 2rem 0;
     font-size: 1rem;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  #contacto form .mobileDiv {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #contacto form .desktopDiv {
-    display: none !important;
   }
 }
 
