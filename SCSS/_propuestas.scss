@@ -20,21 +20,35 @@
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             text-transform: uppercase;
             margin: 2rem auto 0 auto;
+
+            /*Mobile*/
+            @media only screen and (max-width:768px){    
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
         }
 
         .contenedor-libros{
+
             justify-content: center;
 
             a{
                 z-index: 1;
+                height: 100%;
 
                 img{  
+
                     transform: rotate3d(1,0,0,-25deg);
                     transition: transform 0.3s ease-out;
     
                     &:hover{
                         transform: rotate3d(1,0,0,0deg);   
                     } 
+
+                    /*Mobile*/
+                    @media only screen and (max-width:768px){    
+                        display: none
+                    }       
                 }
     
                 .libro1{
@@ -62,6 +76,53 @@
             }        
         }
 
+        .contenedor-libros-mobile{
+
+            justify-content: center;
+
+            a{
+                z-index: 1;
+                height: 100%;
+
+                img{  
+                    transform: rotate3d(1,0,0,-25deg);
+                    transition: transform 0.3s ease-out;
+    
+                    &:hover{
+                        transform: rotate3d(1,0,0,0deg);   
+                    } 
+
+                    /*Desktop*/
+                    @media only screen and (min-width:769px){    
+                        display: none
+                    }
+                }
+    
+                .libro1{
+                    height: 354.75px;
+                }
+    
+                .libro2{
+                    height: 308.25px;
+                    margin-top: 2.475rem;
+                }
+    
+                .libro3{
+                    height: 357px;
+                }
+    
+                .libro4{
+                    height: 339px;
+                    margin-top: 0.975rem;
+                }
+    
+                .libro5{
+                    height: 315px;
+                    margin-top: 2.475rem;
+                }   
+            }        
+        }
+
         .contenedor-cta{
             width: 60%;
             padding: 0 0.5rem 0.5rem 0.5rem;
@@ -75,6 +136,11 @@
             box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
             border-radius: 30px;
 
+            /*Mobile*/
+            @media only screen and (max-width:768px){    
+                width: 90%;
+            }
+
             p{
                 font-family: 'Julius Sans One';
                 font-weight: 400;
@@ -82,12 +148,14 @@
                 text-align: center;
                 color: #000000;
                 padding-top: 1.5rem;
-            }
-            
 
+                /*Mobile*/
+                @media only screen and (max-width:768px){    
+                    font-size: 1rem;
+                    padding-top: 1rem;
+                    margin-bottom: 0;
+                }
+            }
         }
     }
-    
-   
-   
 }

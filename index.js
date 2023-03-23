@@ -17,23 +17,23 @@ document.getElementById("form-button").addEventListener("click", function(e){
     const isEmpty = Object.values(params).every(x => x != '');
 
     if(isEmpty==false){
-        if(nombre.value==""){Swal.fire('Nos está faltando tu nombre')}
+        if(params.nombre==""){Swal.fire('Nos está faltando tu nombre');}
         else {
-            if(apellido.value==""){Swal.fire('Nos está faltando tu apellido')}
+            if(params.apellido==""){Swal.fire('Nos está faltando tu apellido')}
             else {
-                if(telefono.value==""){Swal.fire('Nos está faltando tu telefono')}
+                if(params.telefono==""){Swal.fire('Nos está faltando tu telefono')}
                 else {
-                    if(email.value==""){Swal.fire('Nos está faltando tu email')}
+                    if(params.email==""){Swal.fire('Nos está faltando tu email')}
                     else {
-                        if(evento.value==""){Swal.fire('Nos está faltando tu tipo de evento')}
+                        if(params.evento==""){Swal.fire('Nos está faltando tu tipo de evento')}
                         else {
-                            if(edad.value==""){Swal.fire('Nos está faltando la edad de l@s asistentes')}
+                            if(params.edad==""){Swal.fire('Nos está faltando la edad de l@s asistentes')}
                             else {
-                                if(lugar.value==""){Swal.fire('Nos está faltando el lugar de tu evento')}
+                                if(params.lugar==""){Swal.fire('Nos está faltando el lugar de tu evento')}
                                 else {
-                                    if(cantidad.value==""){Swal.fire('Nos está faltando la cantidad de asistentes')}
+                                    if(params.cantidad==""){Swal.fire('Nos está faltando la cantidad de asistentes')}
                                     else {
-                                        if(mensaje.value==""){Swal.fire('Nos está faltando tu mensaje')}
+                                        if(params.mensaje==""){Swal.fire('Nos está faltando tu mensaje')}
                                     }
                                 }
                             }
@@ -46,8 +46,6 @@ document.getElementById("form-button").addEventListener("click", function(e){
     }
     else{
         sendMail();
-        console.log(params);
-        console.log(isEmpty)
     }
 
 });
@@ -72,7 +70,6 @@ function sendMail(){
     emailjs.send(serviceID,templateID,params)
     .then(
         res => {
-            alert ("Tu mensaje fue enviado")
             document.getElementById("nombre").value="";
             document.getElementById("apellido").value="";
             document.getElementById("telefono").value="";
@@ -84,7 +81,6 @@ function sendMail(){
             document.getElementById("mensaje").value="";
             document.getElementById("contact-form").reset();
             window.location.href="confirmacion.html";
-            console.log(res);
         })
     .catch((err)=>console.log(err));
 }

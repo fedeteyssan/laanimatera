@@ -51,23 +51,17 @@
             </div>
         </nav>
 
-        <!--Redes sociales-->
-        <div class="redes-sociales d-flex flex-column justify-content-between">
-            <a target="blank" href="https://api.whatsapp.com/send/?phone=5491130354594&text&type=phone_number&app_absent=0"><img src="Multimedia/logo-whatsapp.png" loading="lazy" alt="Whatsapp"></a>
-            <a target="blank" href="https://www.instagram.com/la_animatera"><img src="Multimedia/logo-IG.png" loading="lazy" alt="Instagram"></a>
-            <a target="blank" href=" https://www.facebook.com/laanimatera"><img src="Multimedia/logo-FB.png" loading="lazy" alt="Facebook"></a>
-        </div>
+        
 
         <!--Formulario-->
         <section class="form-container d-flex flex-column container-fluid w-100">
             <form id="contact-form"class="d-flex flex-column">
 
                 <h3>
-                    Contactanos y entrá 
-                    <br>en nuestro fantástico mundo
+                    Contactanos y entrá en nuestro fantástico mundo
                 </h3>
 
-                <div class="d-flex container-fluid w-100 justify-content-evenly">
+                <div class="d-flex container-fluid w-100 justify-content-evenly desktopDiv">
                     <div class="form-column-1 d-flex flex-column container-fluid w-50">
 
                         <div class="d-flex">
@@ -138,52 +132,7 @@
 
                 </div>
 
-                <button type="submit" id="form-button" class="btn" >Enviar</button>
-
-            </form>
-        </section>
-    </div>
-
-    <div id="contacto-mobile">
-    
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-md">
-            
-            <div class="container-fluid">
-                <!--Logo-->
-                <a class="navbar-brand" href="index.html"><img class="logo-nav" src="/Multimedia/logo-chico.png" loading="lazy" alt=""></a>
-                
-                <!--Hamburguer-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="quienesSomos.html">Quienes somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="propuestas.html">Nuestras propuestas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contacto.html">Contactanos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    
-        <!--Formulario-->
-        <section class="form-container d-flex flex-column container-fluid align-items-center w-100">
-            <form id="contact-form"class="d-flex flex-column">
-    
-                <h3 class="ms-3 mb-3">
-                    Contactanos y entrá 
-                    <br>en nuestro fantástico mundo
-                </h3>
-    
-                <div class="container-fluid d-flex flex-column justify-content-center w-100 ms-3 ">
+                <div class="mobileDiv container-fluid d-flex flex-column justify-content-center w-100 ms-3">
     
                     <div class="mt-2 mb-3">
                         <label for="nombre" class="form-label">Nombre:</label>
@@ -244,16 +193,19 @@
                 </div>
 
                 <button type="submit" id="form-button" class="btn" >Enviar</button>
+
             </form>
-    
-            <!--Redes sociales-->
-            <div class="redes-sociales d-flex justify-content-evenly w-50">
+        </section>
+
+        <!--Redes sociales-->
+        <div class="redes-sociales">
             <a target="blank" href="https://api.whatsapp.com/send/?phone=5491130354594&text&type=phone_number&app_absent=0"><img src="Multimedia/logo-whatsapp.png" loading="lazy" alt="Whatsapp"></a>
             <a target="blank" href="https://www.instagram.com/la_animatera"><img src="Multimedia/logo-IG.png" loading="lazy" alt="Instagram"></a>
             <a target="blank" href=" https://www.facebook.com/laanimatera"><img src="Multimedia/logo-FB.png" loading="lazy" alt="Facebook"></a>
-    
-        </section>
+        </div>
     </div>
+
+    
     
     <!--email.js-->
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

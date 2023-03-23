@@ -1,12 +1,6 @@
 #contacto{    
     @import '../SCSS/componentes/navbar';
 
-    /*Desktop*/
-    @media only screen and (max-width:768px){
-        width: 100%;
-        height: 250px;
-        display: none;
-    }
 
     background-image: url("../Multimedia/bg-contacto.webp");
     background-size: cover;
@@ -14,12 +8,34 @@
     position: relative;
     background-attachment: scroll;
     min-height: 100vh;
+
+    /*Mobile*/
+    @media only screen and (max-width:768px){
+        background-image: url("../Multimedia/bg-mobile-contacto.png");
+        background-attachment:fixed;
+    }
    
 
     .redes-sociales{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+
         position: absolute;
         left: 93%;
         bottom: 10%;
+
+        /*Mobile*/
+        @media only screen and (max-width:768px){
+            flex-direction: row;
+            justify-content:space-evenly;
+            width: 50%;
+            position: relative;
+            left:25%;
+            bottom: 10px;
+            padding: 1rem 0 3rem 0;
+        }
+
 
         img{
             width: 3rem;
@@ -37,13 +53,27 @@
         box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
         border-radius: 0px 57px 57px 0px;
 
+        /*Mobile*/
+        @media only screen and (max-width:768px){
+            width: 90%;
+            margin: 1rem 0;
+            border-radius: 15px;
+            align-items: center;
+        }
 
         h3{
             font-family: 'Julius Sans One', sans-serif;
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-weight: 400;
             color: #7846A6;
             text-transform: uppercase;
+            margin: 1rem 0 0 4rem;
+
+            /*Mobile*/
+            @media only screen and (max-width:768px){
+                font-size: 1rem;
+                margin: 2.25rem 0 0 1rem;                 
+            }            
         }
 
         .form-column-1{
@@ -61,7 +91,12 @@
             font-weight: 400;
             font-size: 1.125rem;
             text-align: center;
-            margin-bottom: 0;;
+            margin-bottom: 0;
+
+            /*Mobile*/
+            @media only screen and (max-width:768px){   
+                font-size: 1rem;
+            }            
         }
 
         input{
@@ -69,11 +104,21 @@
             height: 2.25rem;
             background: rgba(247, 236, 236, 0.75);
             border-radius: 15px;
+
+            /*Mobile*/
+            @media only screen and (max-width:768px){   
+                width: 90%;
+            }  
         }
 
         textarea{
             background: rgba(247, 236, 236, 0.75);
             border-radius: 15px;
+
+            /*Mobile*/
+            @media only screen and (max-width:768px){   
+                width: 90%;
+            }  
         }
 
         button{
@@ -92,93 +137,30 @@
             font-size: 1.25rem;
             text-align: center;
             color: #FFFFFF;
+
+            /*Mobile*/
+            @media only screen and (max-width:768px){ 
+
+                margin:0 0 2rem 0;
+                font-size: 1rem;
+            }  
         }
+
+        /*Desktop*/
+        @media only screen and (min-width:769px){
+            .mobileDiv{
+                display: none !important;
+            }
+        }
+
+        /*Mobile*/
+        @media only screen and (max-width:768px){
+            .desktopDiv{
+                display: none !important;
+            }
+        }   
     }
 }
 
-#contacto-mobile{
-    @import '../SCSS/componentes/navbar';
 
-    /*Mobile*/
-      @media only screen and (min-width:769px){
-        width: 100%;
-        height: 250px;
-        display: none;
-    }
-    
-    background-image: url("../Multimedia/bg-mobile-contacto.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    background-attachment:fixed;
-    min-height: 100vh;
 
-    form{
-        width: 90%;
-        height: 100%;
-        margin: 1rem 0;
-        background: rgba(253, 249, 249, 0.75);
-        border: 1px solid rgba(44, 38, 108, 0.33);
-        box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 15px;
-
-        h3{
-            font-family: 'Julius Sans One', sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            color: #7846A6;
-            text-transform: uppercase;
-            margin: 2.25rem 0 0 1rem;
-        }
-
-        label{
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1rem;
-            text-align: center;
-            margin-bottom: 0;;
-        }
-
-        input{
-            width: 90%;
-            background: rgba(247, 236, 236, 0.75);
-            border-radius: 15px;
-        }
-
-        textarea{
-            width: 90%;
-            background: rgba(247, 236, 236, 0.75);
-            border-radius: 15px;
-        }
-
-        button{
-            width: 8.75rem;
-            height: 2.5rem;
-            
-            margin-bottom: 2rem;
-            align-self: center;
-             
-            background: #7846A6;
-            box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.25);
-            border-radius: 22px;
-
-            font-family: 'Poppins';
-            font-weight: 500;
-            font-size: 1rem;
-            text-align: center;
-            color: #FFFFFF;
-        }
-    }
-
-    .redes-sociales{
-        
-        margin-bottom: 3rem;
-
-        img{
-            width: 3rem;
-            padding-top: 0.5rem;
-            filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.37));
-        }
-    } 
-}
